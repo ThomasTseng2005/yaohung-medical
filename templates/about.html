@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+
+<section class="about-header">
+    <h1 class="about-h1">關於我們</h1>
+</section>
+<section class="about-body">
+    <p>曜弘診所是一個社區內科診所，位於新北市三重區菜寮捷運站旁，由三重在地成長、馬偕醫學中心醫學院訓練學成、胃腸肝膽專科醫師暨健康檢查中心主治醫師田醫師主持。我們期待藉由醫學中心品質的醫療與生活關懷與衛教，透過真實陪伴祝福來到診所的每個人。曜弘診所於2020年3月籌備，5月簽訂現址，起初就走在新冠肺炎疫情嚴峻時期，透過不斷禱告，於波動市場環境下，得以平安預備各樣事宜，6月裝潢，願提供溫暖的空間與氛圍，使進到當中、忙於日常的人能得到平靜舒適，預計8月中開幕，屆時將配合健康檢查活動，祝福周邊社區民眾。</p>
+</section>
+<section class="about-image">
+    <img src="{{ url_for('static', filename='about-image.jpg') }}" alt="About Us Image" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
+</section>
+<section class="about-logo">
+    <div class="logo-container" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
+        <div class="logo-image">
+            <div>
+                <div>
+                    <svg id="logo-animated" data-name="New Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 382" style=""><defs><style>.cls-1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-width:5px;}</style></defs><path class="cls-1 XJXEsLcy_0" d="M27,4.3C30.9,5.9,73.3,21.9,121.2,40l87.3,33v78.5h45v18h-45l-.2,69.7-.3,69.7-93,35.3c-51.1,19.4-93.4,35.5-94,35.7s76.3.5,170.8.5l171.7.1V1.5l-171.7.1H20Z"></path><path class="cls-1 XJXEsLcy_1" d="M1.5,191V366.3l10.8-3.4c5.9-1.9,48.3-15.5,94.2-30.2L190,305.9l.3-68.2.2-68.2h-45v-18h45l-.2-37.7L190,76,99,46.8C48.9,30.7,6.5,17.1,4.8,16.6l-3.3-.9Z"></path><style data-made-with="vivus-instant">.XJXEsLcy_0{stroke-dasharray:1793 1795;stroke-dashoffset:1794;animation:XJXEsLcy_draw_0 6200ms ease-out 0ms infinite,XJXEsLcy_fade 6200ms linear 0ms infinite;}.XJXEsLcy_1{stroke-dasharray:1067 1069;stroke-dashoffset:1068;animation:XJXEsLcy_draw_1 6200ms ease-out 0ms infinite,XJXEsLcy_fade 6200ms linear 0ms infinite;}@keyframes XJXEsLcy_draw{100%{stroke-dashoffset:0;}}@keyframes XJXEsLcy_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes XJXEsLcy_draw_0{12.903225806451612%{stroke-dashoffset: 1794}45.16129032258064%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes XJXEsLcy_draw_1{12.903225806451612%{stroke-dashoffset: 1068}45.16129032258064%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
+                </div>
+                <h2>Logo 意象</h2>
+            </div>
+        </div>
+        <div class="logo-text">
+            <p>透過禱告，領受有一道門，被打開，有溫暖並不刺眼的金黃光芒照進來，人走進來，得到醫治、得到祝福。</p>
+        </div>
+    </div>
+</section>
+<section class="about-meaning">
+    <div class="meaning-container" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
+        <div>
+            <div>
+                <h3>曜弘的意涵</h3>
+                <p>診所像溫暖不刺眼的光芒(曜)，透過田院長(弘)醫治來到當中的人，身體恢復健康。</p>
+            </div>
+        </div>
+        <img src="{{ url_for('static', filename='about-doctor.jpg') }}" alt="Doctor Image">
+    </div>
+</section>
+
+{% endblock %}

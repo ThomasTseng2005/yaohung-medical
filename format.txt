@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='') }}"></script>
+
+{% endblock %}

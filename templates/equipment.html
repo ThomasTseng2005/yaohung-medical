@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+
+<section class="about-header" id="equipment-header">
+    <h1 class="about-h1">專業設備</h1>
+</section>
+<section class="about-body equipment-body">
+    <div class="equipment-title">
+        <h2>超音波</h2>
+        <h3><i>無輻射且不需侵入性即可獲得醫學影像的診斷工具</i></h3>
+    </div>
+    <p><b>超快速資料傳輸: </b>本院採用醫學中心等級Canon高階彩色杜卜勒超音波掃描儀器，主機爲Digital Transmission 13000 Chenel以上，超快速資料傳輸，畫面精準不定格。</p>
+    <p><b>影像細緻真實: </b>影像細緻真實 探頭內含192晶片單元，內建影像優化處理軟體，影像細緻真實，10段Multi Frequency 變頻，完全提供高解析度影像，高感度血流偵測，可以即時精準顯現提供全身（甲狀腺、乳房、心臟、肝、膽、腎、胰、脾、四肢血管，肌肉骨骼）高畫質超音波影像。</p>
+    <p><b>動靜態影像: </b>內建硬碟可以大量存取每筆受檢者超音波動靜態影像，並可燒入光碟及USB。</p>
+    <p><b>保溫舒適: </b>貼心設計凝膠保溫器讓受檢者可舒適安心的接受超音波檢查。</p>
+</section>
+<section class="about-image equipment-image">
+    <img src="{{ url_for('static', filename='equipment-image1.jpg') }}" alt="Equipment Image 1" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
+</section>
+<section class="about-body equipment-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
+    <div class="equipment-title">
+        <h2>內視鏡</h2>
+        <h3><i>本院與台大醫院同步引進富士Fujifilm最新7000型內視鏡檢查系統，此機型為目前臨床最高解析度電子式腸胃鏡，世界專利LCI系統得精準辨識病灶，提供來院病患最高品質的醫療服務。</i></h3>
+    </div>
+    <div class="equipment-text">
+        <h5>內視鏡系統</h5>
+        <p><b>高解析度: </b>4K高等醫療級螢幕搭配PACS影像處理系統。</p>
+        <p><b>精準診斷: </b>搭載多重特殊光學處理器，利用BLI及LCI光學原理，與一般白光整合辨識，能檢查出傳統影像學無法檢查到的微小病灶，達到最精確、快速的診斷， 7000系統採用4種可獨立控制的高強度LED燈泡提升其檢查精準性，白光提供清楚、明亮、正確的影像，BLI  利用藍紫色光學短波及強烈對比的技術可診斷消化道表面的微血管組織，LCI  為白光及BLI光學的結合，使用【紅色色差】的表現可初步診斷消化道的組織排列及血管，及早發現早期癌病變。</p>
+    </div>
+    <div class="equipment-text">
+        <h5>胃鏡、腸鏡</h5>
+        <p><b>影像強化: </b>具備IEE影像強化功能，配合高階7000型內視鏡主機系統，有效達到高等級精準的診斷。</p>
+        <p><b>超廣角: </b>超廣角170°鏡頭，優勝於臨床普遍使用之130-150°廣角鏡頭。</p>
+        <p><b>高解析度: </b>CMOS高解析度鏡頭，臨床成像質量大幅提升，影像不失真。</p>
+        <p><b>高舒適度: </b>大腸鏡軟硬可調、彈性優良，易旋轉、彎曲的檢查管徑使檢查過程更加舒適、順暢。</p>
+    </div>
+</section>
+<section class="about-image equipment-image" id="equipment-last">
+    <img src="{{ url_for('static', filename='equipment-image2.jpg') }}" alt="Equipment Image 2" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
+</section>
+
+
+{% endblock %}
