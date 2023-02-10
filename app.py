@@ -13,7 +13,7 @@ def favicon():
 
 @app.route('/')
 def home():
-    return render_template("home.html", title="", navbar="trans", footer="108vh", footer_two="90vh")
+    return render_template("home.html", title="", navbar="trans", footer="0rem", footer_two="0rem")
 
 @app.route('/about')
 def about():
@@ -25,6 +25,7 @@ def equipment():
 
 @app.route('/events')
 def events():
+
     return render_template("events.html", title="", navbar="green", footer="7.5rem", footer_two="7.5rem")
 
 @app.route('/environment')

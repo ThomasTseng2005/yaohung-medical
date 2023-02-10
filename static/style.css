@@ -1,6 +1,8 @@
 /* === ELEMENTS=== */
+
 body{
     background: #ffffff;
+    width: 100vw;
 }
 
 /* === LAYOUT === */
@@ -213,7 +215,7 @@ body{
 
 .header-wrapper{
     background-color: #f5f2f0;
-    position: absolute;
+    position: relative;
     height: 108vh;
     width: 100vw;
     display: flex;
@@ -225,7 +227,7 @@ body{
     width: 26rem;
     background-color: white;
     position: relative;
-    left: 9rem;
+    left: 18%;
     top: 2rem;
     z-index: 10;
     display: flex;
@@ -278,7 +280,6 @@ body{
 
 .doctor-wrapper{
     position: relative;
-    top: 108vh;
 }
 
 .doctor-grid{
@@ -324,7 +325,6 @@ body{
 .medical-wrapper{
     background: #fbf7f3;
     position: relative;
-    top: 108vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,7 +356,6 @@ body{
 
 .bio-wrapper{
     position: relative;
-    top: 108vh;
 }
 
 .bio-grid{
@@ -563,6 +562,25 @@ body{
     top: 8rem;
     margin: 4rem;
     margin-top: 0;
+}
+
+/* Event */
+
+#event-wrapper {
+    position: relative;
+    top: 6rem;
+    width: 100%;
+    padding: 0 3rem;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#event-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* Equipment */
@@ -778,6 +796,7 @@ textarea:focus{
     }
     .doctor-grid{
         grid-template-columns: 1fr;
+        padding: 4rem 3rem;
     }
     .doctor-info h2{
         margin-top: 2rem;
@@ -809,6 +828,17 @@ textarea:focus{
     #calendar{
         height: 100%;
         font-size: 115%;
+    }
+    #event-wrapper {
+        position: relative;
+        width: 100%;
+        padding: 3rem 0;
+        height: 45rem;
+    }
+    #event-iframe {
+        width: 95%;
+        height: 100%;
+        border: none;
     }
     .meaning-container{
         display: grid;
@@ -845,6 +875,22 @@ textarea:focus{
     }
     textarea{
         font-size: 1.3rem;
+    }
+    .header{
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 90vh;
+        background-position: center bottom;
+    }
+    .header-block{
+        align-items: center;
+        position: relative;
+        left: 0;
+    }
+    .header-wrapper{
+        height: 90vh;;
+        justify-content: center;
     }
 }
 
@@ -887,15 +933,6 @@ textarea:focus{
         height: 90vh;;
         justify-content: center;
     }
-    .doctor-wrapper{
-        top: 90vh;
-    }
-    .medical-wrapper{
-        top: 90vh;
-    }
-    .bio-wrapper{
-        top: 90vh;
-    }
     .medical-grid{
         text-align: center;
         grid-template-columns: 1fr 1fr;
@@ -907,6 +944,17 @@ textarea:focus{
     #calendar{
         height: 100%;
         font-size: 120%;
+    }
+    #event-wrapper {
+        position: relative;
+        width: 100%;
+        padding: 3rem 0;
+        height: 54rem;
+    }
+    #event-iframe {
+        width: 75%;
+        height: 100%;
+        border: none;
     }
     .fc-scroller{
         height: 65vh !important;
@@ -1000,6 +1048,9 @@ textarea:focus{
     #image-grid{
         grid-template-columns: 1fr;
     }
+    .doctor-grid{
+        padding: 3rem 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1046,9 +1097,108 @@ textarea:focus{
     }
 }
 
+@media only screen and (max-width: 400px) {
+    html, body{
+        font-size: 70% !important;
+    }
+    .header{
+        height: 90vh;
+    }
+    .header-block{
+        top: 2vh;
+        align-items: center;
+        position: relative;
+        left: 0;
+        width: 90vw;
+    }
+    .header-block > div{
+        padding: 3rem;
+    }
+    .header-wrapper{
+        justify-content: center;
+    }
+    .header-h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    .header-h2{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    html, body {
+        font-size: 70% !important;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    html, body {
+        font-size: 85%;
+    }
+    .header{
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background-position: center bottom;
+    }
+    .header-block{
+        top: 0;
+        align-items: center;
+        position: relative;
+        left: 0;
+        height: 75vh;
+    }
+    .header-wrapper{
+        height: 100vh;;
+        justify-content: center;
+    }
+    .header-h1{
+        font-size: 2.8rem;
+    }
+    .header-h2{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 570px) {
+    html, body {
+        font-size: 85%;
+    }
+    .header{
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background-position: center bottom;
+    }
+    .header-block{
+        top: 0;
+        align-items: center;
+        position: relative;
+        left: 0;
+        height: 80vh;
+    }
+    .header-wrapper{
+        height: 100vh;;
+        justify-content: center;
+    }
+    .header-h1{
+        font-size: 2.8rem;
+    }
+    .header-h2{
+        width: 100%;
+    }
+    .nav-links-hide{
+        display: none;
+    }
+}
+
 @media only screen and (max-height: 480px) {
     html, body{
-        font-size: 70%;
+        font-size: 70% !important;
     }
     .hidden-links li a{
         line-height: 3.3rem;
@@ -1089,10 +1239,59 @@ textarea:focus{
     #calendar{
         font-size: 150%;
     }
+    .header{
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background-position: center bottom;
+    }
+    .header-block{
+        top: 0;
+        align-items: center;
+        position: relative;
+        left: 0;
+        height: 90vh;
+    }
+    .header-wrapper{
+        height: 100vh;;
+        justify-content: center;
+    }
+    .header-h1{
+        font-size: 2.8rem;
+    }
+    .header-h2{
+        width: 100%;
+    }
+    .nav-links-hide{
+        display: none;
+    }
 }
 
 @media only screen and (max-height: 320px) {
     html, body{
-        font-size: 65%;
+        font-size: 65% !important;
+    }
+    .header-block{
+        top: 0;
+        align-items: center;
+        position: relative;
+        left: 0;
+        height: 90vh;
+    }
+    .header-block > div{
+        padding: 3rem;
+    }
+    .header-wrapper{
+        height: 100vh;;
+        justify-content: center;
+    }
+    .header-h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .header-h2{
+        font-size: 1.7rem;
+        width: 100%;
     }
 }
