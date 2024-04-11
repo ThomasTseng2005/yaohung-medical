@@ -306,7 +306,7 @@ body{
 
 .doctor-info{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-left: 1.3rem;
     margin-right: 1.4rem;
@@ -320,6 +320,23 @@ body{
     font-size: 1.2rem;
     margin: 0;
     font-weight: 200;
+}
+
+.office-hours{
+    /* color:#7C9885; */
+}
+
+/* .office-hours .row{
+  border: 1px solid #000;
+  margin: 20px;
+  background: #eee;
+  padding: 0;
+} */
+
+.office-hours .hours{
+    background-color:#7C9885;
+    color:#ecba82;
+    border: 3px solid #ffffff !important;
 }
 
 .medical-wrapper{
@@ -798,6 +815,16 @@ textarea:focus{
         grid-template-columns: 1fr;
         padding: 4rem 3rem;
     }
+    .doctor-info{
+        justify-content: center;
+    }
+    .doctor-info .office-hours .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.3rem;
+        margin-right: 1.4rem;
+    }
     .doctor-info h2{
         margin-top: 2rem;
         text-align: center;
@@ -1003,6 +1030,16 @@ textarea:focus{
     #contact-wrapper{
         padding: 0 6rem;
     }
+    .doctor-info{
+        justify-content: center;
+    }
+    .doctor-info .office-hours .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.3rem;
+        margin-right: 1.4rem;
+    }
 }
 
 @media only screen and (max-width: 576px){
@@ -1051,6 +1088,9 @@ textarea:focus{
     .doctor-grid{
         padding: 3rem 1.5rem;
     }
+    .doctor-info{
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1061,8 +1101,16 @@ textarea:focus{
         font-size: 1.4rem;
     }
     .doctor-info{
+        justify-content: center;
         margin-left: 0;
         margin-right: 0;
+    }
+    .doctor-info .office-hours .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.3rem;
+        margin-right: 1.4rem;
     }
     .doctor-info p{
         font-size: 1.4rem;
