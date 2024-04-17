@@ -310,6 +310,7 @@ body{
     align-items: center;
     margin-left: 1.3rem;
     margin-right: 1.4rem;
+    max-width: 100%;
 }
 
 .doctor-info h2{
@@ -323,7 +324,10 @@ body{
 }
 
 .office-hours{
-    /* color:#7C9885; */
+    width: 34.375rem;
+}
+.office-hours .row{
+    padding: 0.15rem;
 }
 
 /* .office-hours .row{
@@ -334,8 +338,9 @@ body{
 } */
 
 .office-hours .hours{
+    font-size: 1.875rem;
     background-color:#7C9885;
-    color:#ecba82;
+    color:#f6d1a6;
     border: 3px solid #ffffff !important;
 }
 
@@ -436,16 +441,16 @@ body{
 .about-header{
     background:
         linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
           /* rgba(255, 255, 255, 0.6),
           rgba(255, 255, 255, 0.6)
            */
         ),
-        url("about-header.png") no-repeat;
+        url("store.jpeg") no-repeat;
     background-size: cover !important;
     height: 55vh;
-    background-position: center 60%;
+    background-position: top 100%;
     margin: 0;
     width: 100%;
     background-attachment: fixed;
@@ -651,7 +656,7 @@ body{
           rgba(255, 255, 255, 0.6)
            */
         ),
-        url("environment-header.jpg") no-repeat;
+        url("environment-header2.jpeg") no-repeat;
     background-position: center center;
 }
 
@@ -687,7 +692,7 @@ body{
           rgba(255, 255, 255, 0.6)
            */
         ),
-        url("environment-header.jpg") no-repeat;
+        url("contact-header2.jpeg") no-repeat;
     background-position: center 30%;
 }
 
@@ -841,6 +846,12 @@ textarea:focus{
     }
     .doctor-info p{
         font-size: 1.4rem;
+    }
+    .office-hours{
+        max-width: 34.375rem;
+    }
+    .office-hours .row{
+        padding: 0.15rem;
     }
     .footer-copyright{
         font-size: 1.1rem;
@@ -1039,6 +1050,13 @@ textarea:focus{
         align-items: center;
         margin-left: 1.3rem;
         margin-right: 1.4rem;
+    }
+    .office-hours{
+        width: 100%;
+        max-width: 34.375rem;
+    }
+    .office-hours .row div{
+        padding: 0.15rem;
     }
 }
 
