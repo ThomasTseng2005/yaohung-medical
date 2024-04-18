@@ -645,6 +645,12 @@ body{
     margin-bottom: 3rem;
 }
 
+.video-mask{
+    width: 100%;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
 /* Environment */
 
 #environment-header{
