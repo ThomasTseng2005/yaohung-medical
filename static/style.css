@@ -450,7 +450,7 @@ body{
         url("store.jpeg") no-repeat;
     background-size: cover !important;
     height: 55vh;
-    background-position: top 100%;
+    background-position: top center;
     margin: 0;
     width: 100%;
     background-attachment: fixed;
