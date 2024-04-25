@@ -22,17 +22,19 @@
         </div>
     </div>
 </section>
-<section class="about-image equipment-image">
-    <video class="video-mask" controls autoplay muted playsinline disablepictureinpicture  controlslist="nodownload" width="100%" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
-        <source src="{{ url_for('static', filename='fujifilm-ai.mp4') }}" type="video/mp4" />
-    </video>
+<section class="about-image">
+    <div class="equipment-video">
+        <iframe class="video" 
+            src="https://www.youtube.com/embed/fmisi8UYcPI" 
+            title="Fujifilm ai (CAD EYE)" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </div>
 </section>
 <section  class="about-body equipment-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
-    <!-- <div class="equipment-text">
-        <h5>什麼是CAD EYE？</h5>
-        <p>簡單來說，它是經過巨量專業醫療知識與醫療圖像深度學習後的內視鏡人工智慧(AI)影像判讀系統，使醫師在做內視鏡檢查時，經CAD EYE同步搜尋異常病灶、分析腸道內病灶屬性
-            （增生性、腺瘤性、惡性等），文獻統計CAD EYE搜尋與專業判讀病灶能力相當於資深胃腸科主治醫師，使民眾在受檢時，等同有多位資深胃腸科醫師協助偵測與判讀病灶之醫療品質。</p>
-    </div> -->
     <div class="equipment-text">
         <h5>內視鏡人工智慧影像判讀系統</h5>
         <p><b>關於【CAD EYE】: </b>簡單來說，它是經過巨量專業醫療知識與醫療圖像深度學習後的內視鏡人工智慧(AI)影像判讀系統，使醫師在做內視鏡檢查時，經CAD EYE同步搜尋異常病灶、分析腸道內病灶屬性
@@ -56,10 +58,15 @@
         </div>
     </div>
 </section>
-<section class="about-image equipment-image">
-    <video class="video-mask" controls autoplay muted playsinline disablepictureinpicture  controlslist="nodownload" width="100%" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
-        <source src="{{ url_for('static', filename='fujifilm-7000.mp4') }}" type="video/mp4" />
-    </video>
+<section class="about-image">
+    <div class="equipment-video">
+        <iframe class="video" src="https://www.youtube.com/embed/Wi_Zi6_w7B4??rel=0&autoplay=1" 
+            title="Fujifilm 7000" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
 </section>
 <section  class="about-body equipment-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
     <div class="equipment-text">
@@ -89,19 +96,8 @@
     <p><b>保溫舒適: </b>貼心設計凝膠保溫器讓受檢者可舒適安心的接受超音波檢查。</p>
 </section>
 <section class="about-image equipment-image">
-    <!-- <img src="{{ url_for('static', filename='equipment-image1.jpg') }}" alt="Equipment Image 1" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out"> -->
     <img src="{{ url_for('static', filename='equipment-image1-1.jpg') }}" alt="Equipment Image 1" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
 </section>
-<!-- <section class="about-image equipment-image" id="equipment-last">
-    <div class="row">
-        <div class="col-12 col-lg-6">
-            <img src="{{ url_for('static', filename='equipment-image1.jpg') }}" alt="Equipment Image 2" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
-        </div>
-        <div class="col-12 col-lg-6">
-            <img src="{{ url_for('static', filename='equipment-image1-1.jpg') }}" alt="Equipment Image 2" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out">
-        </div>
-    </div>
-</section> -->
 
 
 {% endblock %}
