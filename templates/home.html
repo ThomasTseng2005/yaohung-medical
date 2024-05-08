@@ -1,216 +1,565 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 
-<script type="text/javascript" src="{{ url_for('static', filename='script1.js') }}"></script>
-    <script type="text/javascript">var _jf = _jf || [];_jf.push(['p','60994']);_jf.push(['initAction',true]);_jf.push(['_setFont','pentouch-regular','css','.pentouch-regular']);_jf.push(['_setFont','pentouch-regular','alias','pentouch-regular']);_jf.push(['_setFont','pentouch-regular','weight',600]);(function(A,p,c,m,l,q,r,h,B,D){var b=A._jf;if(b.constructor!==Object){var t=!0,u=function(a){var f=!0,e;for(e in b)b[e][0]==a&&(f&&(f=f&&!1!==b[e][1].call(b)),b[e]=null,delete b[e])},v=/\S+/g,w=/[\t\r\n\f]/g,C=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,n="".trim,x=n&&!n.call("\ufeff\u00a0")?function(a){return null==a?"":n.call(a)}:function(a){return null==a?"":(a+"").replace(C,"")},k=function(a){var f,b,g;if("string"===typeof a&&a&&(a=(a||"").match(v)||[],f=h[c]?(" "+h[c]+" ").replace(w," "):" ")){for(g=0;b=a[g++];)0>f.indexOf(" "+b+" ")&&(f+=b+" ");h[c]=x(f)}},d=function(a){var b,e,g;if(0===arguments.length||"string"===typeof a&&a){var d=(a||"").match(v)||[];if(b=h[c]?(" "+h[c]+" ").replace(w," "):""){for(g=0;e=d[g++];)for(;0<=b.indexOf(" "+e+" ");)b=b.replace(" "+e+" "," ");h[c]=a?x(b):""}}},y;b.addScript=y=function(b,f,e,g,d,c){d=d||function(){};c=c||function(){};var a=p.createElement("script"),h=p.getElementsByTagName("script")[0],k,m=!1,l=function(){a.src="";a.parentNode.removeChild(a);a=a.onerror=a.onload=a.onreadystatechange=null};g&&(k=setTimeout(function(){l();c()},g));a.type=f||"text/javascript";a.async=e;a.onload=a.onreadystatechange=function(b,c){m||a.readyState&&!/loaded|complete/.test(a.readyState)||(m=!0,g&&clearTimeout(k),l(),c||d())};a.onerror=function(a,b,d){g&&clearTimeout(k);l();c();return!0};a.src=b;h.parentNode.insertBefore(a,h)};for(var z in b)"initAction"==b[z][0]&&(t=b[z][1]);b.push(["_eventPreload",function(){1==t&&k(m);y(B,null,!1,3E3,null,function(){u("_eventInactived")})}]);b.push(["_eventReload",function(){d(r);d(q);k(l)}]);b.push(["_eventActived",function(){d(m);d(l);k(q)}]);b.push(["_eventInactived",function(){d(m);d(l);k(r)}]);u("_eventPreload")}})(this,this.document,"className","jf-loading","jf-reloading","jf-active","jf-inactive",this.document.getElementsByTagName("html")[0],"//ds.justfont.com/js/stable/v/6.0/id/286397071563");</script>
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script1.js') }}"
+></script>
+<script type="text/javascript">
+  var _jf = _jf || [];
+  _jf.push(['p', '60994']);
+  _jf.push(['initAction', true]);
+  _jf.push(['_setFont', 'pentouch-regular', 'css', '.pentouch-regular']);
+  _jf.push(['_setFont', 'pentouch-regular', 'alias', 'pentouch-regular']);
+  _jf.push(['_setFont', 'pentouch-regular', 'weight', 600]);
+  (function (A, p, c, m, l, q, r, h, B, D) {
+    var b = A._jf;
+    if (b.constructor !== Object) {
+      var t = !0,
+        u = function (a) {
+          var f = !0,
+            e;
+          for (e in b)
+            b[e][0] == a &&
+              (f && (f = f && !1 !== b[e][1].call(b)),
+              (b[e] = null),
+              delete b[e]);
+        },
+        v = /\S+/g,
+        w = /[\t\r\n\f]/g,
+        C = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,
+        n = ''.trim,
+        x =
+          n && !n.call('\ufeff\u00a0')
+            ? function (a) {
+                return null == a ? '' : n.call(a);
+              }
+            : function (a) {
+                return null == a ? '' : (a + '').replace(C, '');
+              },
+        k = function (a) {
+          var f, b, g;
+          if (
+            'string' === typeof a &&
+            a &&
+            ((a = (a || '').match(v) || []),
+            (f = h[c] ? (' ' + h[c] + ' ').replace(w, ' ') : ' '))
+          ) {
+            for (g = 0; (b = a[g++]); )
+              0 > f.indexOf(' ' + b + ' ') && (f += b + ' ');
+            h[c] = x(f);
+          }
+        },
+        d = function (a) {
+          var b, e, g;
+          if (0 === arguments.length || ('string' === typeof a && a)) {
+            var d = (a || '').match(v) || [];
+            if ((b = h[c] ? (' ' + h[c] + ' ').replace(w, ' ') : '')) {
+              for (g = 0; (e = d[g++]); )
+                for (; 0 <= b.indexOf(' ' + e + ' '); )
+                  b = b.replace(' ' + e + ' ', ' ');
+              h[c] = a ? x(b) : '';
+            }
+          }
+        },
+        y;
+      b.addScript = y = function (b, f, e, g, d, c) {
+        d = d || function () {};
+        c = c || function () {};
+        var a = p.createElement('script'),
+          h = p.getElementsByTagName('script')[0],
+          k,
+          m = !1,
+          l = function () {
+            a.src = '';
+            a.parentNode.removeChild(a);
+            a = a.onerror = a.onload = a.onreadystatechange = null;
+          };
+        g &&
+          (k = setTimeout(function () {
+            l();
+            c();
+          }, g));
+        a.type = f || 'text/javascript';
+        a.async = e;
+        a.onload = a.onreadystatechange = function (b, c) {
+          m ||
+            (a.readyState && !/loaded|complete/.test(a.readyState)) ||
+            ((m = !0), g && clearTimeout(k), l(), c || d());
+        };
+        a.onerror = function (a, b, d) {
+          g && clearTimeout(k);
+          l();
+          c();
+          return !0;
+        };
+        a.src = b;
+        h.parentNode.insertBefore(a, h);
+      };
+      for (var z in b) 'initAction' == b[z][0] && (t = b[z][1]);
+      b.push([
+        '_eventPreload',
+        function () {
+          1 == t && k(m);
+          y(B, null, !1, 3e3, null, function () {
+            u('_eventInactived');
+          });
+        },
+      ]);
+      b.push([
+        '_eventReload',
+        function () {
+          d(r);
+          d(q);
+          k(l);
+        },
+      ]);
+      b.push([
+        '_eventActived',
+        function () {
+          d(m);
+          d(l);
+          k(q);
+        },
+      ]);
+      b.push([
+        '_eventInactived',
+        function () {
+          d(m);
+          d(l);
+          k(r);
+        },
+      ]);
+      u('_eventPreload');
+    }
+  })(
+    this,
+    this.document,
+    'className',
+    'jf-loading',
+    'jf-reloading',
+    'jf-active',
+    'jf-inactive',
+    this.document.getElementsByTagName('html')[0],
+    '//ds.justfont.com/js/stable/v/6.0/id/286397071563'
+  );
+</script>
 
 <section class="header-wrapper">
-    <div class="header-block">
-        <div>
-            <h1 class="header-h1">曜弘診所</h1>
-            <h2 class="header-h2">以有溫度的生活關懷，將多年醫學中心培訓之醫療品質帶入病人的家庭，開啟一扇健康與生活品質改善的門。</h2>
-            <a href="tel:+886 22984-0101"><button id="header-button">預約門診</button></a>
-        </div>
+  <div class="header-block">
+    <div>
+      <h1 class="header-h1">曜弘診所</h1>
+      <h2 class="header-h2">
+        以有溫度的生活關懷，將多年醫學中心培訓之醫療品質帶入病人的家庭，開啟一扇健康與生活品質改善的門。
+      </h2>
+      <a href="tel:+886 22984-0101"
+        ><button id="header-button">預約門診</button></a
+      >
     </div>
-    <div class="header"></div>
+  </div>
+  <div class="header"></div>
 </section>
 <section class="doctor-wrapper">
-    <div class="doctor-grid">
-        <div class="doctor-image">
-            <img src="{{ url_for('static', filename='doctor-image.jpg') }}" alt="Doctor Image" class="doctor-image">
-        </div>
-        <div class="doctor-info">
-            <div>
-                <h2>田名弘 院長</h2>
-                <p>台北馬偕紀念醫院胃腸肝膽科主治醫師</p>
-                <p>台北馬偕紀念醫院健康檢查中心主治醫師</p>
-                <p>台灣消化系內科專科醫師</p>
-                <p>台灣消化系內視鏡醫學會專科醫師</p>
-                <p>振興醫療財團法人振興醫院醫師</p>
-                <p>衛生福利部台東醫院醫師</p>
-                <p>台灣消化系醫學會會員</p>
-                <p>中華民國醫用超音波學會會員</p>
-                <p>台灣肥胖醫學會會員</p>
-                <br>
-                <p id="doctor-description">從小在三和市場長大，於醫學中心醫學院訓練學成，父母教育核心為將醫療專業回饋社會，期許從醫學中心將最新的專業知識技能帶進社區診所，以三重人實在誠懇的心替在地人服務。</p>
-                <br>
-                <div class="office-hours">
-                    <h3 class="title">門診時間</h3>
-                    <div class="row border-bottom text-center flex-row">
-                        <div class="col-2 d-flex justify-content-center align-items-center"></div>
-                        <div class="col d-flex justify-content-center align-items-center">一</div>
-                        <div class="col d-flex justify-content-center align-items-center">二</div>
-                        <div class="col d-flex justify-content-center align-items-center">三</div>
-                        <div class="col d-flex justify-content-center align-items-center">四</div>
-                        <div class="col d-flex justify-content-center align-items-center">五</div>
-                    </div>
-                    <div class="row text-center flex-row border-bottom">
-                        <div class="col-2 border-right d-flex justify-content-center align-items-center">09:00 <br/>~<br/> 12:30</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                    </div>
-                    <div class="row text-center flex-row border-bottom">
-                        <div class="col-2 border-right d-flex justify-content-center align-items-center">14:00 <br/>~<br/> 16:30</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                    </div>
-                    <div class="row text-center flex-row">
-                        <div class="col-2 border-right d-flex justify-content-center align-items-center">17:30 <br/>~<br/> 20:30</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            
-        </div>
+  <div class="doctor-grid">
+    <div class="doctor-image">
+      <img
+        src="{{ url_for('static', filename='doctor-image.jpg') }}"
+        alt="Doctor Image"
+        class="doctor-image"
+      />
     </div>
+    <div class="doctor-info">
+      <div>
+        <h2>田名弘 院長</h2>
+        <p>台北馬偕紀念醫院胃腸肝膽科主治醫師</p>
+        <p>台北馬偕紀念醫院健康檢查中心主治醫師</p>
+        <p>台灣消化系內科專科醫師</p>
+        <p>台灣消化系內視鏡醫學會專科醫師</p>
+        <p>振興醫療財團法人振興醫院醫師</p>
+        <p>衛生福利部台東醫院醫師</p>
+        <p>台灣消化系醫學會會員</p>
+        <p>中華民國醫用超音波學會會員</p>
+        <p>台灣肥胖醫學會會員</p>
+        <br />
+        <p id="doctor-description">
+          從小在三和市場長大，於醫學中心醫學院訓練學成，父母教育核心為將醫療專業回饋社會，期許從醫學中心將最新的專業知識技能帶進社區診所，以三重人實在誠懇的心替在地人服務。
+        </p>
+        <br />
+        <div class="office-hours">
+          <h3 class="title">門診時間</h3>
+          <div class="row border-bottom text-center flex-row">
+            <div
+              class="col-2 d-flex justify-content-center align-items-center"
+            ></div>
+            <div class="col d-flex justify-content-center align-items-center">
+              一
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              二
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              三
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              四
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              五
+            </div>
+          </div>
+          <div class="row text-center flex-row border-bottom">
+            <div
+              class="col-2 border-right d-flex justify-content-center align-items-center"
+            >
+              09:00 <br />~<br />
+              12:30
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+          </div>
+          <div class="row text-center flex-row border-bottom">
+            <div
+              class="col-2 border-right d-flex justify-content-center align-items-center"
+            >
+              14:00 <br />~<br />
+              16:30
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+          </div>
+          <div class="row text-center flex-row">
+            <div
+              class="col-2 border-right d-flex justify-content-center align-items-center"
+            >
+              17:30 <br />~<br />
+              20:30
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
 </section>
 <section class="medical-wrapper">
-    <div class="medical-description">
-        <h2>診治專長</h2>
-        <ul class="medical-grid">
-            <li>腸胃疾病
-            <li>肝膽疾病</li>
-            <li>B、C型肝炎</li>
-            <li>內視鏡治療</li>
-            <li>成人健康檢查</li>
-            <li>肥胖減重</li>
-            <li>感冒</li>
-            <li>高血壓</li>
-            <li>糖尿病</li>
-            <li>高血脂</li>
-            <li>甲狀腺疾病</li>
-            <li>痛風</li>
-            <li>泌尿道感染</li>
-            <li>脂肪肝</li>
-            <li>一般內科疾病</li>
-            <li>蜂窩性組織炎</li>
-            <li>傷口換藥</li>
-            <li>成人流感疫苗注射</li>
-            <li>慢性病處方簽</li>
-        </ul>
-    </div>
+  <div class="medical-description">
+    <h2>診治專長</h2>
+    <ul class="medical-grid">
+      <li>高血壓</li>
+      <li>高血脂</li>
+      <li>糖尿病</li>
+      <li>肝膽疾病</li>
+      <li>B、C型肝炎</li>
+      <li>腸胃疾病</li>
+      <li>胃潰瘍</li>
+      <li>胃食道逆流</li>
+      <li>十二指腸潰瘍</li>
+      <li>胃幽門桿菌感染</li>
+      <li>腹脹/腹痛</li>
+      <li>腹瀉/便秘</li>
+      <li>腸胃炎</li>
+      <li>腸躁症</li>
+      <li>內科疾病</li>
+      <li>泌尿道感染</li>
+      <li>甲狀腺疾病</li>
+      <li>感冒</li>
+    </ul>
+  </div>
 </section>
 <section class="doctor-wrapper">
-    <div class="doctor-grid">
-        <div class="doctor-image">
-            <img src="{{ url_for('static', filename='doctor-lee.jpg') }}" alt="Doctor Image" class="doctor-image">
-        </div>
-        <div class="doctor-info">
-            <div>
-                <h2>李儀嗚 醫師</h2>
-                <p>中國醫藥大學醫學士、西醫、中醫雙執照</p>
-                <p>國立臺灣大學農化系學士、碩士(現生化科技系)</p>
-                <p>國立臺灣大學生化科技系碩士</p>
-                <p>台北馬偕紀念醫院胃腸肝膽科主治醫師</p>
-                <p>台灣消化系內科專科醫師</p>
-                <p>台灣消化系內視鏡醫學會專科醫師</p>
-                <p>台灣內科專科醫師</p>
-                <p>中華民國醫用超音波學會會員</p>
-                <br>
-                <p id="doctor-description"> </p>
-                <br>
-                <div class="office-hours">
-                    <h3 class="title">門診時間</h3><div class="row border-bottom text-center flex-row">
-                        <div class="col-2 d-flex justify-content-center align-items-center"></div>
-                        <div class="col d-flex justify-content-center align-items-center">一</div>
-                        <div class="col d-flex justify-content-center align-items-center">二</div>
-                        <div class="col d-flex justify-content-center align-items-center">三</div>
-                        <div class="col d-flex justify-content-center align-items-center">四</div>
-                        <div class="col d-flex justify-content-center align-items-center">五</div>
-                    </div>
-                    <div class="row text-center flex-row border-bottom">
-                        <div class="col-2 border-right d-flex justify-content-center align-items-center">09:00 <br/>~<br/> 12:30</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center display-2">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                    </div>
-                    <div class="row text-center flex-row border-bottom">
-                        <div class="col-2 border-right d-flex justify-content-center align-items-center">14:00 <br/>~<br/> 16:30</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                    </div>
-                    <div class="row text-center flex-row">
-                        <div class="col-2 border-right d-flex justify-content-center align-items-center">17:30 <br/>~<br/> 20:30</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">　</div>
-                        <div class="col hours d-flex justify-content-center align-items-center">●</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="doctor-grid">
+    <div class="doctor-image">
+      <img
+        src="{{ url_for('static', filename='doctor-lee.jpg') }}"
+        alt="Doctor Image"
+        class="doctor-image"
+      />
     </div>
+    <div class="doctor-info">
+      <div>
+        <h2>李儀嗚 醫師</h2>
+        <p>中國醫藥大學醫學士、西醫、中醫雙執照</p>
+        <p>國立臺灣大學農化系學士、碩士(現生化科技系)</p>
+        <p>國立臺灣大學生化科技系碩士</p>
+        <p>台北馬偕紀念醫院胃腸肝膽科主治醫師</p>
+        <p>台灣消化系內科專科醫師</p>
+        <p>台灣消化系內視鏡醫學會專科醫師</p>
+        <p>台灣內科專科醫師</p>
+        <p>中華民國醫用超音波學會會員</p>
+        <br />
+        <p id="doctor-description"></p>
+        <br />
+        <div class="office-hours">
+          <h3 class="title">門診時間</h3>
+          <div class="row border-bottom text-center flex-row">
+            <div
+              class="col-2 d-flex justify-content-center align-items-center"
+            ></div>
+            <div class="col d-flex justify-content-center align-items-center">
+              一
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              二
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              三
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              四
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              五
+            </div>
+          </div>
+          <div class="row text-center flex-row border-bottom">
+            <div
+              class="col-2 border-right d-flex justify-content-center align-items-center"
+            >
+              09:00 <br />~<br />
+              12:30
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center display-2"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+          </div>
+          <div class="row text-center flex-row border-bottom">
+            <div
+              class="col-2 border-right d-flex justify-content-center align-items-center"
+            >
+              14:00 <br />~<br />
+              16:30
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+          </div>
+          <div class="row text-center flex-row">
+            <div
+              class="col-2 border-right d-flex justify-content-center align-items-center"
+            >
+              17:30 <br />~<br />
+              20:30
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              ●
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="medical-wrapper">
-    <div class="medical-description">
-        <h2>診治專長</h2>
-        <ul class="medical-grid">
-            <li>高血壓</li>
-            <li>高血脂</li>
-            <li>糖尿病</li>
-            <li>慢性病處方簽</li>
-            <li>胃食道逆流</li>
-            <li>胃潰瘍</li>
-            <li>十二指腸潰瘍</li>
-            <li>胃幽門桿菌感染</li>
-            <li>腹痛</li>
-            <li>腹瀉</li>
-            <li>腸胃炎</li>
-            <li>便秘</li>
-            <li>腸躁症</li>
-            <li>一般內科疾病</li>
-            <li>感冒</li>
-            <li>泌尿道感染</li>
-            <li>蜂窩性組織炎</li>
-            <li>B、C型肝炎</li>
-            <li>脂肪肝</li>
-        </ul>
-    </div>
+  <div class="medical-description">
+    <h2>診治專長</h2>
+    <ul class="medical-grid">
+      <li>高血壓</li>
+      <li>高血脂</li>
+      <li>糖尿病</li>
+      <li>肝膽疾病</li>
+      <li>B、C型肝炎</li>
+      <li>腸胃疾病</li>
+      <li>胃潰瘍</li>
+      <li>胃食道逆流</li>
+      <li>十二指腸潰瘍</li>
+      <li>胃幽門桿菌感染</li>
+      <li>腹脹/腹痛</li>
+      <li>腹瀉/便秘</li>
+      <li>腸胃炎</li>
+      <li>腸躁症</li>
+      <li>內科疾病</li>
+      <li>泌尿道感染</li>
+      <li>甲狀腺疾病</li>
+      <li>感冒</li>
+    </ul>
+  </div>
 </section>
 <section class="bio-wrapper">
-    <div class="bio-grid">
-        <div class="bio-info">
-            <div>
-                <div class="bio-info-show"><i class="fas fa-calendar-alt"></i><p>週一至週五</p></div>
-                <div class="bio-info-hide">
-                    <p><b>開診時間：</b></p>
-                    <p>週一至週五（09:00 ~ 12:30 ， 14:00 ~ 16:30 ， 17:30 ~ 20:30)</p>
-                    <p>＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。
-                    <br>＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到</p>
-                </div>
-                <div class="bio-info-show">
-                    <i class="fas fa-clock"></i>
-                    <p class="bio-info-time">09:00 ~ 12:30 ， 14:00 ~ 16:30 ， 17:30 ~ 20:30</p>
-                </div>
-                <div class="bio-info-show">
-                    <p>＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。<br>＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到。</p>
-                </div>
-                <div class="bio-info-show"><i class="fas fa-phone-alt"></i><p>02-2984-0101</p></div>
-                <div class="bio-info-hide"><p><b>電話：</b></p><p>02-2984-0101</p></div>
-                <div id="bio-info-last" class="bio-info-show"><i class="fas fa-map-marked-alt"></i><p>新北市三重區重新路三段107號1樓</p></div>
-                <div class="bio-info-hide"><p><b>地址：</b></p><p>新北市三重區重新路三段107號1樓</p></div>
-            </div>
+  <div class="bio-grid">
+    <div class="bio-info">
+      <div>
+        <div class="bio-info-show">
+          <i class="fas fa-calendar-alt"></i>
+          <p>週一至週五</p>
         </div>
-        <img src="{{ url_for('static', filename='store.jpeg') }}" alt="Store Background">
+        <div class="bio-info-hide">
+          <p><b>開診時間：</b></p>
+          <p>週一至週五（09:00 ~ 12:30 ， 14:00 ~ 16:30 ， 17:30 ~ 20:30)</p>
+          <p>
+            ＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。
+            <br />＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到
+          </p>
+        </div>
+        <div class="bio-info-show">
+          <i class="fas fa-clock"></i>
+          <p class="bio-info-time">
+            09:00 ~ 12:30 ， 14:00 ~ 16:30 ， 17:30 ~ 20:30
+          </p>
+        </div>
+        <div class="bio-info-show">
+          <p>
+            ＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。<br />＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到。
+          </p>
+        </div>
+        <div class="bio-info-show">
+          <i class="fas fa-phone-alt"></i>
+          <p>02-2984-0101</p>
+        </div>
+        <div class="bio-info-hide">
+          <p><b>電話：</b></p>
+          <p>02-2984-0101</p>
+        </div>
+        <div id="bio-info-last" class="bio-info-show">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>新北市三重區重新路三段107號1樓</p>
+        </div>
+        <div class="bio-info-hide">
+          <p><b>地址：</b></p>
+          <p>新北市三重區重新路三段107號1樓</p>
+        </div>
+      </div>
     </div>
+    <img
+      src="{{ url_for('static', filename='store.jpeg') }}"
+      alt="Store Background"
+    />
+  </div>
 </section>
 
 {% endblock %}
