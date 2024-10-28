@@ -261,6 +261,7 @@ body {
 .header-h2 {
   font-size: 1.75rem;
   font-family: pentouch-regular, serif;
+  font-display: swap;
   margin-bottom: 2rem;
   text-align: left;
   line-height: 2.5rem;
@@ -324,7 +325,7 @@ body {
 }
 
 .office-hours {
-  width: 34.375rem;
+  width: 39.25rem;
 }
 .office-hours .row {
   padding: 0.15rem;
@@ -344,7 +345,7 @@ body {
   border: 3px solid #ffffff !important;
 }
 .office-hours .hours .icon-star {
-  width: 3.25rem;
+  width: 3.75rem;
 }
 .office-hours .hours .icon-grass {
   width: 3.75rem;
@@ -882,7 +883,7 @@ textarea:focus {
     font-size: 1.4rem;
   }
   .office-hours {
-    max-width: 34.375rem;
+    max-width: 39.25rem;
   }
   .office-hours .row {
     padding: 0.15rem;
@@ -1088,7 +1089,7 @@ textarea:focus {
   }
   .office-hours {
     width: 100%;
-    max-width: 34.375rem;
+    max-width: 39.25rem;
   }
   .office-hours .row div {
     padding: 0.15rem;
