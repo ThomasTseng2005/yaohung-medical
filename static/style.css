@@ -338,10 +338,34 @@ body {
 } */
 
 .office-hours .hours {
-  font-size: 1.875rem;
-  background-color: #7c9885;
+  font-size: 2.875rem;
+  background-color: #5a6421;
   color: #f6d1a6;
   border: 3px solid #ffffff !important;
+}
+.office-hours .hours .icon-star {
+  width: 3.25rem;
+}
+.office-hours .hours .icon-grass {
+  width: 3.75rem;
+}
+.office-hours .hours .icon-dot {
+  width: 3.75rem;
+}
+.icon-star {
+  width: 1.5rem;
+}
+.icon-grass {
+  width: 1.5rem;
+}
+.icon-dot {
+  width: 1.5rem;
+}
+.office-hours-description {
+  color: #5a6421;
+}
+.office-hours-description .note {
+  margin-left: 1.5rem;
 }
 
 .medical-wrapper {
@@ -1120,6 +1144,13 @@ textarea:focus {
   }
   .doctor-info {
     justify-content: center;
+  }
+  .office-hours-description .col-md-12 {
+    margin-bottom: 10px;
+  }
+  .office-hours-description .dot,
+  .office-hours-description .note {
+    margin-top: 0; /* 手機螢幕時移除 margin-top */
   }
 }
 

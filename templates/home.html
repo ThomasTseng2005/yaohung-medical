@@ -162,7 +162,7 @@
   <div class="doctor-grid">
     <div class="doctor-image">
       <img
-        src="{{ url_for('static', filename='doctor-image.jpg') }}"
+        src="{{ url_for('static', filename='doctor-image-2024.jpg') }}"
         alt="Doctor Image"
         class="doctor-image"
       />
@@ -216,7 +216,29 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-star.png') }}"
+                alt="純門診"
+                class="icon-star"
+              />
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="{{ url_for('static', filename='icon-grass.png') }}"
+                alt="內視鏡檢查診"
+                class="icon-grass"
+              />
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -226,17 +248,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            >
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
           </div>
           <div class="row text-center flex-row border-bottom">
@@ -254,7 +270,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -264,7 +284,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -287,7 +311,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -297,7 +325,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -306,9 +338,50 @@
             </div>
           </div>
         </div>
+        <br />
+        <div class="row flex-row office-hours-description">
+          <div class="col-md-12 d-flex align-items-start align-items-md-center">
+            <img
+              src="{{ url_for('static', filename='icon-star.png') }}"
+              alt="純門診"
+              class="icon-star"
+            />
+            <span>
+              <span class="font-weight-bold">純門診：</span
+              >無內視鏡檢查時段，供看診者多利用，超音波、心電圖等均可進行。
+            </span>
+          </div>
+          <div class="col-md-12 d-flex align-items-start align-items-md-center">
+            <img
+              src="{{ url_for('static', filename='icon-grass.png') }}"
+              alt="純門診"
+              class="icon-grass"
+            />
+            <span
+              ><span class="font-weight-bold">內視鏡檢查診：</span
+              >進行胃腸內視鏡檢查與特約診</span
+            >
+          </div>
+          <div
+            class="col-md-12 d-flex align-items-start align-items-md-center dot"
+          >
+            <img
+              src="{{ url_for('static', filename='icon-dot.png') }}"
+              alt="門診與胃腸鏡檢查交替進行"
+              class="icon-dot"
+            />
+            <span class="font-weight-bold"
+              >門診與胃腸鏡檢查交替進行，洽詢櫃檯可有較精確候診時間推估。</span
+            >
+          </div>
+          <div
+            class="col-md-12 d-flex align-items-start align-items-md-center note"
+          >
+            以上請於開診期間來電02-29840101洽詢。
+          </div>
+        </div>
       </div>
     </div>
-    <div></div>
   </div>
 </section>
 <section class="medical-wrapper">
@@ -340,7 +413,7 @@
   <div class="doctor-grid">
     <div class="doctor-image">
       <img
-        src="{{ url_for('static', filename='doctor-lee.jpg') }}"
+        src="{{ url_for('static', filename='doctor-lee-2024.jpg') }}"
         alt="Doctor Image"
         class="doctor-image"
       />
@@ -391,12 +464,20 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              　
+              <img
+                src="{{ url_for('static', filename='icon-grass.png') }}"
+                alt="內視鏡檢查診"
+                class="icon-grass"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center display-2"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-star.png') }}"
+                alt="純門診"
+                class="icon-star"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -406,7 +487,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -424,7 +509,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -434,7 +523,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -444,7 +537,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
           </div>
           <div class="row text-center flex-row">
@@ -457,7 +554,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -467,7 +568,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -477,8 +582,54 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             >
-              ●
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
+          </div>
+        </div>
+        <br />
+        <div class="row flex-row office-hours-description">
+          <div class="col-md-12 d-flex align-items-start align-items-md-center">
+            <img
+              src="{{ url_for('static', filename='icon-star.png') }}"
+              alt="純門診"
+              class="icon-star"
+            />
+            <span>
+              <span class="font-weight-bold">純門診：</span
+              >無內視鏡檢查時段，供看診者多利用，超音波、心電圖等均可進行。
+            </span>
+          </div>
+          <div class="col-md-12 d-flex align-items-start align-items-md-center">
+            <img
+              src="{{ url_for('static', filename='icon-grass.png') }}"
+              alt="純門診"
+              class="icon-grass"
+            />
+            <span
+              ><span class="font-weight-bold">內視鏡檢查診：</span
+              >進行胃腸內視鏡檢查與特約診</span
+            >
+          </div>
+          <div
+            class="col-md-12 d-flex align-items-start align-items-md-center dot"
+          >
+            <img
+              src="{{ url_for('static', filename='icon-dot.png') }}"
+              alt="門診與胃腸鏡檢查交替進行"
+              class="icon-dot"
+            />
+            <span class="font-weight-bold"
+              >門診與胃腸鏡檢查交替進行，洽詢櫃檯可有較精確候診時間推估。</span
+            >
+          </div>
+          <div
+            class="col-md-12 d-flex align-items-start align-items-md-center note"
+          >
+            以上請於開診期間來電02-29840101洽詢。
           </div>
         </div>
       </div>
