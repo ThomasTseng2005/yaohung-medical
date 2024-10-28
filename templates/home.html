@@ -677,30 +677,11 @@
         <div class="bio-info-hide">
           <p><b>開診時間：</b></p>
           <p>週一至週五（09:00 ~ 12:30 ， 14:00 ~ 16:30 ， 17:30 ~ 20:30)</p>
-          <p>
-            ＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。
-            <br />＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到
-            <br /><strong
-              >＊自7/1(一)~7/5(五)原李醫師診節全由田醫師代診(李醫師充電去~田醫師陪大家度過本週的每一天~)。
-              <br />＊7/5(五)晚診休診(田醫師當好爸爸參加小女兒畢業典禮~)。
-              <br />＊自7/8始恢復原診節安排，若需看診，敬請來電02-29840101預約或掛號，謝謝您們。</strong
-            >
-          </p>
         </div>
         <div class="bio-info-show">
           <i class="fas fa-clock"></i>
           <p class="bio-info-time">
             09:00 ~ 12:30 ， 14:00 ~ 16:30 ， 17:30 ~ 20:30
-          </p>
-        </div>
-        <div class="bio-info-show">
-          <p>
-            ＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。<br />＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到。
-            <br /><strong
-              >＊自7/1(一)~7/5(五)原李醫師診節全由田醫師代診(李醫師充電去~田醫師陪大家度過本週的每一天~)。
-              <br />＊7/5(五)晚診休診(田醫師當好爸爸參加小女兒畢業典禮~)。
-              <br />＊自7/8始恢復原診節安排，若需看診，敬請來電02-29840101預約或掛號，謝謝您們。</strong
-            >
           </p>
         </div>
         <div class="bio-info-show">
@@ -727,23 +708,4 @@
     />
   </div>
 </section>
-<script>
-  // 獲取當前日期
-  var currentDate = new Date();
-  var year = currentDate.getFullYear();
-  var month = currentDate.getMonth() + 1;
-  // 月份是從0開始計算的
-  var day = currentDate.getDate();
-  // 判斷日期是否在2024-07-01 ~ 2024-07-05之間
-  if (
-    year === 2024 &&
-    ((month === 6 && day >= 30) || (month === 7 && day <= 5))
-  ) {
-    // 顯示 <strong> 標籤中的內容
-    document.querySelector('.bio-info-show strong').style.display = 'block';
-  } else {
-    // 隱藏 <strong> 標籤中的內容
-    document.querySelector('.bio-info-show strong').style.display = 'none';
-  }
-</script>
 {% endblock %}
