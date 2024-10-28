@@ -141,7 +141,6 @@ function enableScroll() {
 
 function appointmentClick(event) {
   event.preventDefault(); // 防止預設的連結行為
-  console.log('window.userAgent', window.navigator.userAgent);
   const userAgent = window.navigator.userAgent;
   const text =
     '若有就醫、檢查等需求請來電02-29840101洽詢，受理時間為開診時間：週一至週五 9:00～12:30，14:00～16:30，17:30～20:30\n \n ＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。\n ＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到。\n \n 電話：02-2984-0101\n \n 地址：新北市三重區重新路三段107號1樓';

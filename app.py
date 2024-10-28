@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, request, session, send_from_directory
 import os, sys
 import smtplib, ssl
+import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
@@ -13,7 +14,8 @@ def favicon():
 
 @app.route('/')
 def home():
-    return render_template("home.html", title="", navbar="trans", footer="0rem", footer_two="0rem")
+    timestamp = int(time.time())
+    return render_template("home.html", title="", navbar="trans", footer="0rem", footer_two="0rem", timestamp=timestamp)
 
 @app.route('/about')
 def about():
