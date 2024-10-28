@@ -324,6 +324,10 @@ body {
   font-weight: 200;
 }
 
+.doctor-experience h3 {
+  margin-top: 2rem;
+}
+
 .office-hours {
   width: 39.25rem;
 }
@@ -343,6 +347,9 @@ body {
   background-color: #5a6421;
   color: #f6d1a6;
   border: 3px solid #ffffff !important;
+}
+.doctor-info .office-hours .title {
+  margin-top: 2rem;
 }
 .office-hours .hours .icon-star {
   width: 3.75rem;
@@ -364,6 +371,7 @@ body {
 }
 .office-hours-description {
   color: #5a6421;
+  font-size: 1.125rem;
 }
 .office-hours-description .note {
   margin-left: 1.5rem;
@@ -872,6 +880,18 @@ textarea:focus {
   .doctor-info p {
     text-align: center;
   }
+  .doctor-experience h3 {
+    margin-top: 0rem;
+    text-align: center;
+  }
+  .doctor-experience {
+    background: #fbf7f3;
+    position: relative;
+    left: -5rem;
+    width: calc(100% + 10rem);
+    padding: 3rem;
+    margin: 3rem 0;
+  }
   /* #doctor-description{
         display: none;
     } */
@@ -883,10 +903,21 @@ textarea:focus {
     font-size: 1.4rem;
   }
   .office-hours {
-    max-width: 39.25rem;
+    width: 100%;
+    text-align: center;
+  }
+  .office-hours .row div {
+    padding: 0.15rem;
   }
   .office-hours .row {
     padding: 0.15rem;
+  }
+  .doctor-info .office-hours .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.3rem;
+    margin-right: 1.4rem;
   }
   .footer-copyright {
     font-size: 1.1rem;
@@ -1080,20 +1111,6 @@ textarea:focus {
   .doctor-info {
     justify-content: center;
   }
-  .doctor-info .office-hours .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1.3rem;
-    margin-right: 1.4rem;
-  }
-  .office-hours {
-    width: 100%;
-    max-width: 39.25rem;
-  }
-  .office-hours .row div {
-    padding: 0.15rem;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1145,9 +1162,6 @@ textarea:focus {
   }
   .doctor-info {
     justify-content: center;
-  }
-  .office-hours-description .col-md-12 {
-    margin-bottom: 10px;
   }
   .office-hours-description .col-md-12 img {
     width: 2rem;
