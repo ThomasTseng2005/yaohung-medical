@@ -1149,6 +1149,9 @@ textarea:focus {
   .office-hours-description .col-md-12 {
     margin-bottom: 10px;
   }
+  .office-hours-description .col-md-12 img {
+    width: 2rem;
+  }
   .office-hours-description .dot,
   .office-hours-description .note {
     margin-top: 0; /* 手機螢幕時移除 margin-top */
