@@ -690,6 +690,10 @@ body {
   height: 100%;
 }
 
+.equipment-image-height img {
+  height: 31.25rem;
+  text-align: center;
+}
 /* Environment */
 
 #environment-header {
@@ -1169,6 +1173,9 @@ textarea:focus {
   .office-hours-description .dot,
   .office-hours-description .note {
     margin-top: 0; /* 手機螢幕時移除 margin-top */
+  }
+  .office-hours-description .note {
+    margin-left: 2rem;
   }
 }
 
