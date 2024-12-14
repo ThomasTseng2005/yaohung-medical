@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}"
+></script>
+
+<section class="about-header" id="education-header">
+  <h1 class="about-h1">衛教文章</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>精準的內視鏡檢查進而提升胃腸異常病灶檢測率</h2>
+  </div>
+</section>
+<section class="article-detail-body">
+  <div class="row">
+    <div class="col-12 col-lg-4 d-flex align-items-center">
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-01-fujifilm7000-endoscope.jpg') }}"
+        alt="富士7000型內視鏡"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        被胃潰瘍、胃食道逆流困擾，甚至腸胃時常不舒服的你，
+        有沒有進行專業的檢查與診斷呢⁉️
+      </p>
+      <p>🏥曜弘醫療團隊</p>
+      <p>
+        致力於提升三重基層診所之醫療照護品質，選用專業高階內視鏡設備，依據
+        <b>台灣消化系內視鏡醫學會指引</b
+        >，執行精準到位的內視鏡檢查，保障受檢者安全，唯願提升胃腸異常病灶檢測率，促進來診者生命品質。
+        <p>頂尖醫學中心等級高階醫療設備：</p>
+        <ul>
+          <li>
+            <strong>富士7000型內視鏡</strong>
+          </li>
+          <li>
+            <strong>富士腸道內視鏡AI影像判讀設備 (CAD EYE)</strong>
+          </li>
+          <li>
+            <strong>富士最新自動化內視鏡清洗設備</strong>
+          </li>
+          <li>
+            <strong>Canon Xario-100高階彩色杜卜勒超音波</strong>
+          </li>
+        </ul>
+      </p>
+      <p>使用唯一通過全美FDA內視鏡AI影像判讀設備-富士CAD EYE與最新高階內視鏡，透過田院長、李醫師專業、精準到位的檢查，深願大幅提升<b>早期病灶檢測率。</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta name="keywords" content="胃腸異常病灶檢, 台灣消化系內視鏡醫學會指引, 早期病灶檢測率, 胃鏡推薦, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 富士7000型內視鏡, 富士腸道內視鏡AI影像判讀設備 (CAD EYE), CAD EYE, 富士最新自動化內視鏡清洗設備, Canon Xario-100高階彩色杜卜勒超音波, Canon Xario-100">
+<meta name="description" content="曜弘醫療團隊致力於提升三重基層診所之醫療照護品質，提供專業高階內視鏡檢查服務，並使用唯一通過全美FDA的AI影像判讀設備，深願提升早期病灶檢測率。">
+<title>精準的內視鏡檢查 - 胃腸異常病灶檢與胃鏡推薦</title>
+
+{% endblock %}

@@ -40,6 +40,10 @@ def environment():
 def education():
     return render_template("education.html", title="", navbar="green", footer="0", footer_two="0")
 
+@app.route('/articles/<article>')
+def article(article):
+    return render_template(f"articles/{article}.html", title="", navbar="green", footer="0", footer_two="0")
+
 @app.route('/contact', methods=["GET", "POST"])
 def contact():
     response = ""

@@ -745,8 +745,8 @@ body {
 #article-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
   width: 100%;
   padding: 5rem;
 }
@@ -786,7 +786,30 @@ body {
 #article-grid .article-content a {
   margin-top: auto;
   color: #007bff;
+  font-weight: 800;
   text-decoration: none;
+}
+
+.article-detail-title {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.article-detail-body {
+  padding: 0 8rem;
+  margin-bottom: 4rem;
+}
+.article-detail-body img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.article-detail-content {
+  font-size: 1.45rem;
+  line-height: 3rem;
+  font-weight: 200;
 }
 /* Contact */
 
@@ -1025,10 +1048,6 @@ textarea:focus {
     grid-template-columns: 1fr 1fr;
     padding: 3rem;
   }
-  #article-grid {
-    grid-template-columns: 1fr 1fr;
-    padding: 3rem;
-  }
   .contact-info h2 {
     font-size: 1.8rem;
   }
@@ -1062,6 +1081,17 @@ textarea:focus {
   .header-wrapper {
     height: 90vh;
     justify-content: center;
+  }
+  #article-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+  }
+  .article-detail-content {
+    padding: 0 3rem;
+    margin-top: 1.5rem;
+  }
+  .article-detail-body {
+    padding: 0 4rem;
   }
 }
 
@@ -1242,6 +1272,12 @@ textarea:focus {
   }
   .office-hours-description .note {
     margin-left: 2rem;
+  }
+  .article-detail-body {
+    padding: 0 !important;
+  }
+  .article-detail-body img {
+    border-radius: 0 !important;
   }
 }
 
