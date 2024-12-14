@@ -31,6 +31,7 @@ function burgerClick() {
     document.getElementById('nav-link-one').style.display = 'none';
     document.getElementById('nav-link-two').style.display = 'none';
     document.getElementById('nav-link-three').style.display = 'none';
+    document.getElementById('nav-link-four').style.display = 'none';
     setTimeout(function () {
       try {
         document.getElementById('mainNavbar').style.background = 'transparent';
@@ -71,6 +72,7 @@ function burgerClick() {
         document.getElementById('nav-link-one').style.display = 'inline';
         document.getElementById('nav-link-two').style.display = 'inline';
         document.getElementById('nav-link-three').style.display = 'inline';
+        document.getElementById('nav-link-four').style.display = 'inline';
       } catch (err) {
         console.log(err);
       }
