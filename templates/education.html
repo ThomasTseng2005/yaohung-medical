@@ -1,0 +1,97 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}"
+></script>
+
+<section class="about-header" id="education-header">
+  <h1 class="about-h1">衛教文章</h1>
+</section>
+<section id="article-grid">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
+    <img
+      src="{{ url_for('static', filename='articlephoto/article-04-stomach-ulcer.jpg') }}"
+      alt="胃潰瘍"
+    />
+    <div class="article-content">
+      <h3>胃潰瘍可不是件小事</h3>
+      <p>
+        若有在關注醫療或部分社會新聞的朋友
+        就應該都有看到『因胃潰瘍導致多處器官衰竭不治』這類的標題或相關內文。
+      </p>
+      <a href="#">閱讀更多</a>
+    </div>
+  </div>
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
+    <img
+      src="{{ url_for('static', filename='articlephoto/article-03-gastroscopy.jpg') }}"
+      alt="照胃鏡"
+    />
+    <div class="article-content">
+      <h3>照胃鏡痛嗎？</h3>
+      <p>
+        很多人胃不舒服，都跑去買成藥處理的最大原因
+        不外乎就是【照胃鏡很痛、很不舒服ㄟ】
+        被很多人描述的都產生了一個拒絕進入診間的陰影。
+      </p>
+      <a href="#">閱讀更多</a>
+    </div>
+  </div>
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
+    <div class="article-img">
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-02-gastroesophageal-reflux.png') }}"
+        alt="胃食道逆流"
+      />
+    </div>
+    <div class="article-content">
+      <h3>胃食道逆流，正確的就醫才能有效對症下藥解決問題</h3>
+      <p>
+        愛喝咖啡、吃甜食跟辛辣🌶️刺激飲食的你 是不是常常突然就有種火燒心的痛
+        真的很不舒服😮‍💨😮‍💨😮‍💨
+      </p>
+      <a href="#">閱讀更多</a>
+    </div>
+  </div>
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
+    <img
+      src="{{ url_for('static', filename='articlephoto/article-01-fujifilm7000.jpg') }}"
+      alt="富士7000型內視鏡"
+    />
+    <div class="article-content">
+      <h3>精準的內視鏡檢查進而提升</h3>
+      <p>
+        被胃潰瘍、胃食道逆流困擾，甚至腸胃時常不舒服的你，
+        有沒有進行專業的檢查與診斷呢⁉️
+      </p>
+      <a href="#">閱讀更多</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

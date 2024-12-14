@@ -27,12 +27,15 @@ def equipment():
 
 @app.route('/events')
 def events():
-
     return render_template("events.html", title="", navbar="green", footer="7.5rem", footer_two="7.5rem")
 
 @app.route('/environment')
 def environment():
     return render_template("environment.html", title="", navbar="green", footer="0", footer_two="0")
+
+@app.route('/education')
+def education():
+    return render_template("education.html", title="", navbar="green", footer="0", footer_two="0")
 
 @app.route('/contact', methods=["GET", "POST"])
 def contact():
