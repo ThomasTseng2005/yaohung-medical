@@ -773,11 +773,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1.45rem;
+  line-height: 3rem;
+  font-weight: 200;
 }
 
 #article-grid .article-content h3 {
   margin: 0 0 1rem 0;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 #article-grid .article-content a {
