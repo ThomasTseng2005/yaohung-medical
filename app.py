@@ -7,6 +7,10 @@ from email.mime.multipart import MIMEMultipart
 
 app = Flask(__name__)
 
+@app.context_processor
+def inject_timestamp():
+    return {'timestamp': int(time.time())}
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
@@ -14,8 +18,7 @@ def favicon():
 
 @app.route('/')
 def home():
-    timestamp = int(time.time())
-    return render_template("home.html", title="", navbar="trans", footer="0rem", footer_two="0rem", timestamp=timestamp)
+    return render_template("home.html", title="", navbar="trans", footer="0rem", footer_two="0rem")
 
 @app.route('/about')
 def about():
