@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section class="about-body article-detail" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+  data-aos-easing="ease-in-out">
+  <div class="article-detail-title">
+    <h2>胃潰瘍可不是件小事</h2>
+  </div>
+</section>
+<section class="article-detail-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+  data-aos-easing="ease-in-out">
+  <div class="row">
+    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-start">
+      <img src="{{ url_for('static', filename='articlephoto/article-04-stomach-ulcer.jpg') }}" alt="胃潰瘍" />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        若有在關注醫療或部分社會新聞的朋友，就應該都有看到
+        『因胃潰瘍導致多處器官衰竭不治』這類的標題或相關內文。
+      </p>
+      <p>
+        會導致這樣嚴重的結果常見於急性胃潰瘍並穿孔、胃癌等導致消化道出血，
+        全身之血體液容積嚴重缺乏，導致多器官供血不足，走向器官衰竭的遺憾。
+        <strong>胃潰瘍</strong>真的不是一件小事情‼️
+      </p>
+      <p>先來聊聊胃潰瘍</p>
+      <p><strong>什麼狀況下會出現胃潰瘍❓</strong></p>
+      <p>
+        當胃黏膜因為您長期飲酒或吃阿斯匹靈等藥物，抑或是被幽門螺旋桿菌侵害，
+        開始無法維持平衡⚖️。
+      </p>
+      <p>
+        然而胃潰瘍的發生是有時序性的：
+      </p>
+      <ul>
+        <li>胃酸侵蝕變強或者是胃液分泌過多</li>
+        <li>黏膜細胞無法順利進行修復</li>
+        <li>黏膜細胞間的鏈接崩解</li>
+      </ul>
+      <p>
+        <strong>⚠️可以看出，胃酸是胃潰瘍出現很大的因素⚠️</strong>
+      </p>
+      <p>
+        當您感受到一些狀況，例如：
+      </p>
+      <ul>
+        <li>常常感到飢餓</li>
+        <li>胃不舒服</li>
+        <li>胃熱熱的</li>
+        <li>脹氣、噯氣</li>
+        <li>逆酸感、打嗝酸感</li>
+      </ul>
+      <p>都建議去專科診所來進行專業檢查。</p>
+      <p>
+        👨‍⚕️<strong>有一件事情要特別註明：</strong><br>
+        胃潰瘍跟胃食道逆流是兩個不同的疾病，
+        若發生不舒服儘快就醫會是最好解決的方式。<br>
+        定期檢查可以有效避免腸胃嚴重病症。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta name="keywords"
+  content="胃潰瘍, 什麼狀況下會出現胃潰瘍, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 消化系專科, 內視鏡專科, 內視鏡技術師資格">
+<meta name="description" content="胃潰瘍不是小事！了解常見誘因如飲酒、藥物或幽門螺旋桿菌，以及如何透過專業檢查發現症狀並避免器官衰竭等嚴重後果，定期檢查守護腸胃健康。洽詢 02-29840101！">
+<title>胃潰瘍</title>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section class="about-body article-detail" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+  data-aos-easing="ease-in-out">
+  <div class="article-detail-title">
+    <h2>照胃鏡痛嗎？</h2>
+  </div>
+</section>
+<section class="article-detail-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+  data-aos-easing="ease-in-out">
+  <div class="row">
+    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-start">
+      <img src="{{ url_for('static', filename='articlephoto/article-03-gastroscopy.jpg') }}" alt="胃食道逆流" />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        很多人胃不舒服，都跑去買成藥處理的最大原因
+        不外乎就是【照胃鏡很痛、很不舒服ㄟ】
+        被很多人描述的都產生了一個拒絕進入診間的陰影。
+      </p>
+      <p>
+        然而現在醫療技術的發達
+        早已克服許多令人不適的問題，讓照胃鏡這件事情可以更輕鬆面對。
+        編編這邊整理了幾個方式，可以讓大家參考：
+      </p>
+      <ul>
+        <li>
+          <strong>舒眠減痛（自費）</strong><br />
+          是最輕鬆的一個方式，就像睡了一覺一樣。<br />
+          【可來電瞭解 02-29840101】
+        </li>
+        <li>
+          <strong>咽喉局部麻醉</strong><br />
+          可減少咽喉反射動作。是目前健保給付的標準做法。
+        </li>
+        <li>
+          <strong>選擇不同內視鏡選擇</strong><br />
+          確實目前在醫療設備上面有不同的胃鏡管來進行照胃鏡的動作，
+          通常分為口入胃鏡、經鼻胃鏡、以及較為少見的膠囊型內視鏡。
+          三種不同的檢查方式，都適用於不同的狀況。
+        </li>
+      </ul>
+      <p>
+        目前口入胃鏡還是比較難以被取代的檢查方式，最主要的是除了拍攝解析度高、角度變化大之外，
+        最重要的是可以立即發現病灶直接進行處理（瘜肉切除、異常組織切片、止血、甚至益生菌植入等動作。）
+      </p>
+      <p>
+        其實照胃鏡最令人感到不適的，就是內視鏡要從喉嚨通過，進入食道的那一刻。
+        畢竟這異物感確實是很紮實，很容易引起身體的保護措施，引發咽喉的反射動作，
+        會有噁心想吐的感覺。
+      </p>
+      <p>
+        雖然很多人都清楚這是一項侵入性的檢查，
+        要很舒服自在地面對，確實強人所難。
+        但更需要被關注的是，這樣不適的感覺真的會達到無法忍受的狀況嗎⁉️
+      </p>
+      <p>
+        藉由上述的分享，各個患者可以依照自身健康的狀態/需求來診與醫師進行討論，
+        來做最有效的診療與檢查。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta name="keywords"
+  content="照胃鏡痛嗎, 舒眠減痛, 咽喉局部麻醉, 選擇不同內視鏡, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 消化系專科, 內視鏡專科, 內視鏡技術師資格">
+<meta name="description"
+  content="胃鏡檢查很不舒服？其實醫療技術已進步許多！了解舒眠減痛、咽喉局部麻醉、不同內視鏡選擇的優劣與適用情況。曜弘診所提供專業胃鏡檢查，助您輕鬆面對不適，提升健康生活品質。洽詢 02-29840101！">
+<title>照胃鏡痛嗎？</title>
+
+{% endblock %}

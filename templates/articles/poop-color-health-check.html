@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section class="about-body article-detail" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+  data-aos-easing="ease-in-out">
+  <div class="article-detail-title">
+    <h2>你嗯嗯💩便便的時候，會回頭看一下嗎？🤪</h2>
+  </div>
+</section>
+<section class="article-detail-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+  data-aos-easing="ease-in-out">
+  <div class="row">
+    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-start">
+      <img src="{{ url_for('static', filename='articlephoto/article-07-poop-color-health-check.jpg') }}"
+        alt="便便顏色與健康" />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>這一期我們來聊聊個比較有味道的便便和便便的顏色～</p>
+      <p>
+        大多數時候，我們的「嗯嗯」都是呈現黃褐色的成形固體物（如果水水的、糊狀的、泥狀的，你可能是吃壞肚子了）。
+      </p>
+      <p>
+        若呈現以下幾個顏色狀況，那就很特別注意⚠️
+      </p>
+      <ul>
+        <li><strong>鮮紅色便便：</strong>內痔出血、肛裂、低位直腸癌。</li>
+        <li><strong>暗紅色便便：</strong>高度警惕，腸道裡有病變發生。</li>
+        <li>
+          <strong>膿血色便便：</strong>細菌性痢疾、潰瘍性結腸炎等病灶、結直腸息肉、惡性腫瘤。
+        </li>
+        <li>
+          <strong>極深色便便：</strong>上消化道出血，胃十二指腸潰瘍出血、胃部腫瘤等。
+        </li>
+        <li>
+          <strong>潛血性便便：</strong>便便檢測後呈現陽性，建議進行大腸鏡確認相關病灶。
+        </li>
+      </ul>
+      <p>
+        簡單的一個辨別方式，但我們也要特別提醒：
+        <strong>肉眼檢測並沒有準確性</strong>。
+      </p>
+      <p>
+        當你發現便便有異狀，一定都要到醫療院所做完整的診療檢查，才能確保身體健康是否有風險。
+      </p>
+      <p><strong>‼️‼️所以說：你的便便，我們在意‼️‼️</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta name="keywords"
+  content="糞便顏色, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 消化系專科, 內視鏡專科, 內視鏡技術師資格, 210度可彎前鏡頭視野無死角,富士腸道內視鏡AI影像判讀設備 (CAD EYE), CAD EYE ">
+<meta name="description" content="關注便便顏色變化，識別健康隱患！鮮紅、暗紅、膿血色或極深色便便可能預示腸胃疾病。定期檢查，守護身體健康，避免大腸癌等重大病變。洽詢 02-29840101！">
+<title>便便顏色與健康</title>
+
+{% endblock %}

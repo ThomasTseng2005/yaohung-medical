@@ -1,0 +1,121 @@
+{% extends "layout.html" %} {% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+<style>
+  .video-custom {
+    width: 100%;
+    /* 確保充滿父容器 */
+    height: auto;
+    /* 保持比例 */
+    display: block;
+    /* 確保按塊級元素渲染 */
+  }
+</style>
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+<section id="article-grid">
+  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+    data-aos-easing="ease-in-out">
+    <a href="/articles/poop-color-health-check">
+      <img src="{{ url_for('static', filename='articlephoto/article-07-poop-color-health-check.jpg') }}"
+        alt="便便顏色與健康" />
+    </a>
+    <div class="article-content">
+      <h3>你嗯嗯💩便便的時候，會回頭看一下嗎？🤪</h3>
+      <p>
+        這一期我們來聊聊個比較有味道的便便和便便的顏色～
+      </p>
+      <a href="/articles/poop-color-health-check">閱讀更多</a>
+    </div>
+  </div>
+  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+    data-aos-easing="ease-in-out">
+    <a href="/articles/colon-polyp">
+      <video class="video-custom" autoplay loop muted playsinline>
+        <source src="{{ url_for('static', filename='articlephoto/article-06-colon-polyp.mp4') }}" type="video/mp4" />
+        您的瀏覽器不支援 HTML5 視訊播放。
+      </video>
+    </a>
+    <div class="article-content">
+      <h3>大腸瘜肉與大腸鏡，臨床案例分享</h3>
+      <p>
+        小妍的家族中有連續兩代直系血親都罹患大腸癌，讓未滿35歲的她感到擔憂，故來診安排大腸鏡檢查，小妍像一般的年輕人一樣，平時沒有用藥、沒有胃腸不舒服，身體很健康…
+      </p>
+      <a href="/articles/colon-polyp">閱讀更多</a>
+    </div>
+  </div>
+  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+    data-aos-easing="ease-in-out">
+    <a href="/articles/fecal-occult-blood-test">
+      <img src="{{ url_for('static', filename='articlephoto/article-05-fecal-occult-blood-test.jpg') }}" alt="糞便潛血" />
+    </a>
+    <div class="article-content">
+      <h3>糞便潛血檢查快速瞭解你的腸道問題</h3>
+      <p>
+        國健署資料指出每20位糞便潛血呈現陽性者，至少有一位是大腸癌患者，而一半以上有未來可能癌化的線瘤性息肉，真的不能輕視這件事情。
+      </p>
+      <a href="/articles/fecal-occult-blood-test">閱讀更多</a>
+    </div>
+  </div>
+  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+    data-aos-easing="ease-in-out">
+    <a href="/articles/stomach-ulcer">
+      <img src="{{ url_for('static', filename='articlephoto/article-04-stomach-ulcer.jpg') }}" alt="胃潰瘍" />
+    </a>
+    <div class="article-content">
+      <h3>胃潰瘍可不是件小事</h3>
+      <p>
+        若有在關注醫療或部分社會新聞的朋友
+        就應該都有看到『因胃潰瘍導致多處器官衰竭不治』這類的標題或相關內文。
+      </p>
+      <a href="/articles/stomach-ulcer">閱讀更多</a>
+    </div>
+  </div>
+  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+    data-aos-easing="ease-in-out">
+    <a href="/articles/gastroscopy">
+      <img src="{{ url_for('static', filename='articlephoto/article-03-gastroscopy.jpg') }}" alt="照胃鏡" />
+    </a>
+    <div class="article-content">
+      <h3>照胃鏡痛嗎？</h3>
+      <p>
+        很多人胃不舒服，都跑去買成藥處理的最大原因
+        不外乎就是【照胃鏡很痛、很不舒服ㄟ】
+        被很多人描述的都產生了一個拒絕進入診間的陰影。
+      </p>
+      <a href="/articles/gastroscopy">閱讀更多</a>
+    </div>
+  </div>
+  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+    data-aos-easing="ease-in-out">
+    <a href="/articles/gastroesophageal-reflux">
+      <img src="{{ url_for('static', filename='articlephoto/article-02-gastroesophageal-reflux.png') }}" alt="胃食道逆流" />
+    </a>
+    <div class="article-content">
+      <h3>胃食道逆流，正確的就醫才能有效對症下藥解決問題</h3>
+      <p>
+        愛喝咖啡、吃甜食跟辛辣🌶️刺激飲食的你 是不是常常突然就有種火燒心的痛
+        真的很不舒服😮‍💨😮‍💨😮‍💨
+      </p>
+      <a href="/articles/gastroesophageal-reflux">閱讀更多</a>
+    </div>
+  </div>
+  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+    data-aos-easing="ease-in-out">
+    <a href="/articles/fujifilm7000-endoscope">
+      <img src="{{ url_for('static', filename='articlephoto/article-01-fujifilm7000-endoscope.jpg') }}"
+        alt="富士7000型內視鏡" />
+    </a>
+    <div class="article-content">
+      <h3>精準的內視鏡檢查進而提升胃腸異常病灶檢測率</h3>
+      <p>
+        被胃潰瘍、胃食道逆流困擾，甚至腸胃時常不舒服的你，
+        有沒有進行專業的檢查與診斷呢⁉️
+      </p>
+      <a href="/articles/fujifilm7000-endoscope">閱讀更多</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

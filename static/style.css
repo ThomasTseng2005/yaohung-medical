@@ -240,7 +240,7 @@ body {
 }
 
 .header {
-  background: url('header.jpeg') no-repeat;
+  background: url('header_2025.jpg') no-repeat;
   background-size: cover;
   height: 108vh;
   background-position: center center;
@@ -729,8 +729,8 @@ body {
   object-fit: cover;
 }
 
-/* Education */
-#education-header {
+/* Article */
+#articles-header {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)

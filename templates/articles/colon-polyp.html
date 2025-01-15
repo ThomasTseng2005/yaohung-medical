@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+<style>
+  .video-custom {
+    width: 100%;
+    /* 確保充滿父容器 */
+    height: auto;
+    /* 保持比例 */
+    display: block;
+    /* 確保按塊級元素渲染 */
+  }
+</style>
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section class="about-body article-detail" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+  data-aos-easing="ease-in-out">
+  <div class="article-detail-title">
+    <h2>大腸瘜肉與大腸鏡，臨床案例分享</h2>
+  </div>
+</section>
+<section class="article-detail-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
+  data-aos-easing="ease-in-out">
+  <div class="row">
+    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-start">
+      <video class="video-custom" autoplay loop muted playsinline>
+        <source src="{{ url_for('static', filename='articlephoto/article-06-colon-polyp.mp4') }}" type="video/mp4" />
+        您的瀏覽器不支援 HTML5 視訊播放。
+      </video>
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>小妍的家族中有連續兩代直系血親都罹患大腸癌，讓未滿35歲的她感到擔憂，故來診安排大腸鏡檢查，小妍像一般的年輕人一樣，平時沒有用藥、沒有胃腸不舒服，身體很健康。</p>
+      <p>於本診消化系專科醫師進行大腸鏡檢查後，於升結腸處發現有一1.5公分瘜肉，經切除後，由病理專科醫師診斷證實為腺瘤性瘜肉，醫師慶幸的說：「還好及早健康健查！這顆腺瘤切除掉，往後幾年都可以放心。」</p>
+      <p>因小妍看重生命的重要且不忽略腫瘤家族史的風險，及早受檢，中斷了這1.5公分腺瘤將會轉變成大腸癌的路，還她美好的未來。</p>
+      <p>讓我們一起守護腸道健康‼️</p>
+      <p>很多人都聽過【大腸瘜肉】，但可能還不太清楚它是什麼⁉️</p>
+      <p>就讓小編編來跟大家聊聊大腸瘜肉</p>
+      <p><strong>🆘什麼是大腸瘜肉？</strong></p>
+      <p>大腸瘜肉是一種在大腸內壁上長出的異常小塊組織，通常是良性的。但如果不及時處理，某些類型的瘜肉(如腺瘤性瘜肉)可能會隨著時間發展成大腸癌。</p>
+      <p>因此，及早發現和治療大腸瘜肉對於預防大腸癌至關重要。</p>
+      <p><strong>⚠️為什麼要重視大腸瘜肉？</strong></p>
+      <ul>
+        <li>
+          <strong>大多數無症狀：</strong>瘜肉在早期通常不會有明顯症狀，這也是為什麼定期檢查非常重要。你可能根本不知道自己有瘜肉，直到進行大腸鏡檢查時才發現。（有沒有😱假恐怖）
+        </li>
+        <li>
+          <strong>部分瘜肉會變成大腸癌：</strong>雖然大多數瘜肉是良性的，但有些瘜肉在數年內可能轉變成癌症，尤其是『腺瘤性瘜肉』。所以，早期發現並移除瘜肉能有效降低大腸癌的風險。
+        </li>
+      </ul>
+      <p><strong>☑️那怎麼移除大腸瘜肉呢？</strong></p>
+      <p>進行大腸鏡檢察就是很重要的一件事情。</p>
+      <p>醫生會將細長的、彎曲的管子（即大腸鏡）輕輕插入肛門，通過大腸進行檢查。</p>
+      <p>大腸鏡上裝有攝影機，能將大腸內部的影像傳送到螢幕上，讓醫生查看是否有息肉或其他異常。</p>
+      <p>在檢查過程中若發現息肉，醫生會評估其形態、大小，選使用專業醫材與設備將其切除。這樣可以在檢查時直接處理，不需要進一步手術。</p>
+      <p><strong>‼️‼️定期檢查，早期發現‼️‼️</strong></p>
+      <p>請讓編編這樣說：</p>
+      <p>大腸瘜肉是一個可以預防的問題，關鍵是早期發現，定期檢查，保持健康的生活方式。40歲以上的成年人，建議定期做大腸鏡檢查。</p>
+      <p>若是有大腸癌家族病史的朋友建議及早安排人生第一次大腸鏡檢查，向小妍學習，重視生命與健康。臨床經驗發現，大腸瘜肉好發年齡已下降，醫師建議，家族有大腸癌疾病時，至少在35歲要安排大腸鏡健康檢查。</p>
+      <p>別讓小問題變成大麻煩，守護好腸道健康，讓自己遠離大腸癌的風險！</p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta name="keywords"
+  content="大腸瘜肉, 大腸鏡, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 消化系專科, 內視鏡專科, 內視鏡技術師資格, 210度可彎前鏡頭視野無死角,富士腸道內視鏡AI影像判讀設備 (CAD EYE), CAD EYE ">
+<meta name="description"
+  content="什麼是大腸瘜肉？為何需要定期檢查？了解腺瘤性瘜肉與大腸鏡檢查的重要性，預防大腸癌從早期發現開始。40歲以上或有家族病史者，建議定期檢查，守護腸道健康！。洽詢 02-29840101！">
+<title>大腸瘜肉與大腸鏡</title>
+
+{% endblock %}
