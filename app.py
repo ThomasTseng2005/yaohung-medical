@@ -36,9 +36,9 @@ def events():
 def environment():
     return render_template("environment.html", title="", navbar="green", footer="0", footer_two="0")
 
-@app.route('/education')
-def education():
-    return render_template("education.html", title="", navbar="green", footer="0", footer_two="0")
+@app.route('/articles')
+def articles():
+    return render_template("articles.html", title="", navbar="green", footer="0", footer_two="0")
 
 @app.route('/articles/<article>')
 def article(article):
