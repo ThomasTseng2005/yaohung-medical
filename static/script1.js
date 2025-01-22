@@ -179,3 +179,22 @@ function appointmentClick(event) {
     alert(text);
   }
 }
+
+$(document).ready(function() {
+  // 從config.json取得日期設定
+  fetch('/static/news/config.json')
+    .then(response => response.json())
+    .then(data => {
+      const now = new Date();
+      const startDate = new Date(data.notification.startDate);
+      const endDate = new Date(data.notification.endDate);
+      // 只在指定日期區間內顯示modal
+      if (now >= startDate && now <= endDate) {
+        $('#newsModal').modal('show');
+      }
+    })
+    .catch(error => {
+    console.log('無法讀取config.json:', errorThrown);
+  });
+
+});
