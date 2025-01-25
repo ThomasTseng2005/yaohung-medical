@@ -1,6 +1,9 @@
 {% extends "layout.html" %} {% block content %}
 
-<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}"
+></script>
 <style>
   .video-custom {
     width: 100%;
@@ -15,25 +18,57 @@
   <h1 class="about-h1">曜弘報報</h1>
 </section>
 <section id="article-grid">
-  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-    data-aos-easing="ease-in-out">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
+    <a href="/articles/hepatitis-B&C">
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-08-hepatitis-B&C.jpg') }}"
+        alt="便便顏色與健康"
+      />
+    </a>
+    <div class="article-content">
+      <h3>⚠️預防B型與C型肝炎的全民運動🏋️‍♀️</h3>
+      <p>目前全國慢性肝病、肝硬化及肝癌的肇因主要為B型肝炎及C型肝炎。</p>
+      <a href="/articles/hepatitis-B&C">閱讀更多</a>
+    </div>
+  </div>
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
     <a href="/articles/poop-color-health-check">
-      <img src="{{ url_for('static', filename='articlephoto/article-07-poop-color-health-check.jpg') }}"
-        alt="便便顏色與健康" />
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-07-poop-color-health-check.jpg') }}"
+        alt="便便顏色與健康"
+      />
     </a>
     <div class="article-content">
       <h3>你嗯嗯💩便便的時候，會回頭看一下嗎？🤪</h3>
-      <p>
-        這一期我們來聊聊個比較有味道的便便和便便的顏色～
-      </p>
+      <p>這一期我們來聊聊個比較有味道的便便和便便的顏色～</p>
       <a href="/articles/poop-color-health-check">閱讀更多</a>
     </div>
   </div>
-  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-    data-aos-easing="ease-in-out">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
     <a href="/articles/colon-polyp">
       <video class="video-custom" autoplay loop muted playsinline>
-        <source src="{{ url_for('static', filename='articlephoto/article-06-colon-polyp.mp4') }}" type="video/mp4" />
+        <source
+          src="{{ url_for('static', filename='articlephoto/article-06-colon-polyp.mp4') }}"
+          type="video/mp4"
+        />
         您的瀏覽器不支援 HTML5 視訊播放。
       </video>
     </a>
@@ -45,10 +80,18 @@
       <a href="/articles/colon-polyp">閱讀更多</a>
     </div>
   </div>
-  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-    data-aos-easing="ease-in-out">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
     <a href="/articles/fecal-occult-blood-test">
-      <img src="{{ url_for('static', filename='articlephoto/article-05-fecal-occult-blood-test.jpg') }}" alt="糞便潛血" />
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-05-fecal-occult-blood-test.jpg') }}"
+        alt="糞便潛血"
+      />
     </a>
     <div class="article-content">
       <h3>糞便潛血檢查快速瞭解你的腸道問題</h3>
@@ -58,10 +101,18 @@
       <a href="/articles/fecal-occult-blood-test">閱讀更多</a>
     </div>
   </div>
-  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-    data-aos-easing="ease-in-out">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
     <a href="/articles/stomach-ulcer">
-      <img src="{{ url_for('static', filename='articlephoto/article-04-stomach-ulcer.jpg') }}" alt="胃潰瘍" />
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-04-stomach-ulcer.jpg') }}"
+        alt="胃潰瘍"
+      />
     </a>
     <div class="article-content">
       <h3>胃潰瘍可不是件小事</h3>
@@ -72,10 +123,18 @@
       <a href="/articles/stomach-ulcer">閱讀更多</a>
     </div>
   </div>
-  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-    data-aos-easing="ease-in-out">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
     <a href="/articles/gastroscopy">
-      <img src="{{ url_for('static', filename='articlephoto/article-03-gastroscopy.jpg') }}" alt="照胃鏡" />
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-03-gastroscopy.jpg') }}"
+        alt="照胃鏡"
+      />
     </a>
     <div class="article-content">
       <h3>照胃鏡痛嗎？</h3>
@@ -87,10 +146,18 @@
       <a href="/articles/gastroscopy">閱讀更多</a>
     </div>
   </div>
-  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-    data-aos-easing="ease-in-out">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
     <a href="/articles/gastroesophageal-reflux">
-      <img src="{{ url_for('static', filename='articlephoto/article-02-gastroesophageal-reflux.png') }}" alt="胃食道逆流" />
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-02-gastroesophageal-reflux.png') }}"
+        alt="胃食道逆流"
+      />
     </a>
     <div class="article-content">
       <h3>胃食道逆流，正確的就醫才能有效對症下藥解決問題</h3>
@@ -101,11 +168,18 @@
       <a href="/articles/gastroesophageal-reflux">閱讀更多</a>
     </div>
   </div>
-  <div class="article-wrapper" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-    data-aos-easing="ease-in-out">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
     <a href="/articles/fujifilm7000-endoscope">
-      <img src="{{ url_for('static', filename='articlephoto/article-01-fujifilm7000-endoscope.jpg') }}"
-        alt="富士7000型內視鏡" />
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-01-fujifilm7000-endoscope.jpg') }}"
+        alt="富士7000型內視鏡"
+      />
     </a>
     <div class="article-content">
       <h3>精準的內視鏡檢查進而提升胃腸異常病灶檢測率</h3>
