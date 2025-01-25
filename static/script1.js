@@ -180,12 +180,6 @@ function appointmentClick(event) {
   }
 }
 
-// Load YouTube IFrame API
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 $(document).ready(function() {
   // 從config.json取得日期設定
   fetch('/static/news/config.json')
@@ -197,26 +191,19 @@ $(document).ready(function() {
       // 只在指定日期區間內顯示modal
       if (now >= startDate && now <= endDate) {
         $('#newsModal').modal('show');
+        $('#newsModal').on('hidden.bs.modal', function() {
+          $('#newsModal1').modal('show');
+          console.log($('newsModal1Video'))
+        });
+      } else{
+        $('#newsModal1').modal('show');
       }
     })
     .catch(error => {
     console.log('無法讀取config.json:', errorThrown);
   });
-  $('#newsModal').on('hidden.bs.modal', function() {
-    $('#newsModal1').modal('show');
-    // var video = document.getElementById('newsModal1Video');
-    // var player = new YT.Player('newsModal1Video', {
-    //   events: {
-    //   onReady: function(event) {
-    //     event.target.mute();
-    //     event.target.playVideo();
-    //     setTimeout(() => {
-    //     event.target.unMute();
-    //     event.target.setVolume(50); // 設定音量為50%
-    //     }, 2000); // 2 秒後解除靜音並設定音量
-    //   }
-    //   }
-    // });
-      
+  $('#newsModal1').on('hidden.bs.modal', function () {
+    $('#newsModal1Video').remove();  // 移除 iframe
   });
+
 });
