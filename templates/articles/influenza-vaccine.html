@@ -1,0 +1,99 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}"
+></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>早說、晚說、很難過但還是曜說 - 防疫全年無休</h2>
+  </div>
+</section>
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-09-influenza-vaccine.jpg') }}"
+        alt="防疫全年無休"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        根據【衛生福利部疾病管制署】的資料，接種流感疫苗對於預防流感併發重症及降低死亡風險具有顯著效果。
+      </p>
+      <p>
+        在2023-24流感季的研究中，65歲以上長者接種流感疫苗後，
+        預防因實驗室確診流感併發重症的保護力達 75.1% ，
+        而在30天內降低全死因死亡風險的保護力則達 65.7% 。
+      </p>
+      <p>
+        另外，今年度全台重症人數為 233 人，
+        位於台北市、新北市、台中市、台南市、高雄市均為深紅色，
+        為重症人數最多的區域。
+      </p>
+      <p><strong>田院長的建議🧑‍⚕️</strong></p>
+      <p>✈️ 出國/不出國都應施打 <strong>流感疫苗 💉</strong></p>
+      <p><strong>‼️‼️ 認識流感重症警訊 ‼️‼️</strong></p>
+      <ul>
+        <li>高燒不退、嚴重肌肉痠痛、意識越漸萎靡</li>
+        <li>呼吸急促、喘鳴、困難、胸悶</li>
+        <li>劇烈咳嗽、黃痰、濃痰、血痰</li>
+        <li><strong>『不舒服就要就醫，不輕忽』𝐯𝐞𝐫𝐲 𝐢𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭</strong></li>
+      </ul>
+      <p>
+        ⚠️ 感染初期使用
+        <strong>克流感</strong>，可大幅降低後續肺炎、流感重症機率，
+        我們診所備有克流感提供給需要的民眾。
+      </p>
+      <p><strong>生活預防 😷</strong></p>
+      <ul>
+        <li>勤洗手 🧽、在人群中戴口罩</li>
+        <li>特別是在生病期間咳嗽、打噴嚏時務必佩戴口罩</li>
+        <li><strong>【充足睡眠、適當運動、環境通風、公筷母匙】</strong></li>
+      </ul>
+      <p>
+        <strong>身體健康與生命不失盼望都很重要，持續禱告 🙏</strong>
+      </p>
+      <p>
+        參考資料：
+        <ul>
+          <li>
+            衛生福利部疾病管制署新聞稿：<a href="https://pse.is/73vphy">本土資料顯示，長者接種流感疫苗降低重症風險達7成5、降低死亡風險近7成</a>
+          </li>
+          <li>
+            傳染病統計資料查詢系統：<a href="https://pse.is/73vpgs">流感併發重症趨勢圖</a>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="流感疫苗, 克流感, 胃鏡推薦, 舒眠胃鏡推薦, 大腸鏡檢查, 大腸鏡推薦, 田名弘, 李儀鳴, 三重, 胃鏡推薦, 舒眠胃鏡推薦, 三重, 新莊, 蘆洲, 板橋, 疫苗, B肝, C肝, 肝硬化, 脂肪肝, 高血壓, 超音波, 肝臟超音波, 腹部超音波, 胰臟腫瘤, 胰臟癌, 肝纖維化, 肝纖維測量, 高階超音波"
+/>
+<meta name="description" content="根據衛生福利部疾病管制署的資料，接種流感疫苗能有效預防流感併發重症並降低死亡風險。2023-24流感季研究顯示，65歲以上長者接種疫苗後，預防流感重症保護力達75.1%，降低30天內全死因死亡風險保護力達65.7%。今年全台重症人數233人，重症熱區包括台北、新北、台中、台南及高雄。了解流感警訊，及早預防，保持健康！" />
+<title>早說、晚說、很難過但還是曜說 - 防疫全年無休</title>
+
+{% endblock %}
