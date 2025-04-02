@@ -179,31 +179,40 @@ function appointmentClick(event) {
     alert(text);
   }
 }
-
-$(document).ready(function() {
-  // 從config.json取得日期設定
+$(document).ready(function () {
   fetch('/static/news/config.json')
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       const now = new Date();
-      const startDate = new Date(data.notification.startDate);
-      const endDate = new Date(data.notification.endDate);
-      // 只在指定日期區間內顯示modal
-      if (now >= startDate && now <= endDate) {
+      console.log('now', now);
+      const notifications = data.notifications || [];
+      console.log('notifications', notifications);
+
+      // 檢查是否有任何一組區間符合現在時間
+      const isInNotificationPeriod = notifications.some((period) => {
+        const start = new Date(period.startDate);
+        const end = new Date(period.endDate);
+        console.log('start', start);
+        console.log('end', end);
+        return now >= start && now <= end;
+      });
+      console.log('isInNotificationPeriod', isInNotificationPeriod);
+
+      if (isInNotificationPeriod) {
         $('#newsModal').modal('show');
-        $('#newsModal').on('hidden.bs.modal', function() {
+        $('#newsModal').on('hidden.bs.modal', function () {
           $('#newsModal1').modal('show');
-          console.log($('newsModal1Video'))
+          console.log($('#newsModal1Video'));
         });
-      } else{
+      } else {
         $('#newsModal1').modal('show');
       }
     })
-    .catch(error => {
-    console.log('無法讀取config.json:', errorThrown);
-  });
-  $('#newsModal1').on('hidden.bs.modal', function () {
-    $('#newsModal1Video').remove();  // 移除 iframe
-  });
+    .catch((error) => {
+      console.log('無法讀取config.json:', error);
+    });
 
+  $('#newsModal1').on('hidden.bs.modal', function () {
+    $('#newsModal1Video').remove(); // 移除 iframe
+  });
 });
