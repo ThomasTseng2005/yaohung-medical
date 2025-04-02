@@ -1,0 +1,81 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}"
+></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>⚠️胃癌是全球常見的癌症之一‼️</h2>
+  </div>
+</section>
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-10-stomach-cancer.jpg') }}"
+        alt="胃癌是全球常見的癌症之一"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>早期通常症狀不明顯，大部分發現時已進入晚期。</p>
+      <p>因此，定期進行 <strong>胃鏡檢查</strong> 至關重要。</p>
+      <p>
+        若有長期胃部不適、消化不良、食慾不振等情況，應儘早尋求專業醫師處理，檢查胃部狀況。
+      </p>
+      <p>當然平常生活注意這幾件事情，可以讓胃癌沒那麼輕易找上你～</p>
+      <p><strong>以下是田院長特別交代：</strong></p>
+      <p>首先透過【改善飲食習慣】，我們能有效降低發病風險。</p>
+      <ol>
+        <li>避免過度食用高鹽、高脂肪、醃漬及過度加工食物。</li>
+        <li>戒菸、戒酒、戒檳榔</li>
+        <li>『多多』攝取新鮮的蔬果。</li>
+        <li>保持公筷母匙，降低幽門桿菌感染。</li>
+      </ol>
+      <p>以上都有助於減少胃癌的風險，維持腸胃健康。</p>
+      <p><strong>⚠️尤其是有胃癌家族史的人</strong></p>
+      <p>
+        或是長期吸煙、過度飲酒、飲食不均衡（高油、刺激性高）等，屬高風險族群，更應重視定期檢查。
+      </p>
+      <p>
+        <strong
+          >胃鏡檢查可以及早發現病變，及時處理，大大提高治療的成功機會。</strong
+        >
+      </p>
+      <p>瞭解胃鏡與相關問題☎️02-2984-0101</p>
+      <p><strong>【早期發現，早期治療，讓胃癌遠離我們的生活。】</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="胃癌, 胃鏡檢查, 消化不良, 食慾不振, 胃部不適, 幽門桿菌, 三重, 新莊, 蘆洲, 板橋, 健康檢查, 田名弘, 曜弘診所, 舒眠胃鏡推薦, 大腸鏡檢查, 大腸鏡推薦, 210度可彎前鏡頭視野無死角, 脂肪肝, 高血壓, 超音波, 肝臟超音波, 腹部超音波, 高階超音波"
+/>
+<meta
+  name="description"
+  content="胃癌早期常無症狀，定期胃鏡檢查可早期發現、早期治療。注意飲食習慣、遠離高風險因子，降低胃癌發生機率。洽詢 02-2984-0101"
+/>
+<title>胃癌是全球常見的癌症之一</title>
+
+{% endblock %}
