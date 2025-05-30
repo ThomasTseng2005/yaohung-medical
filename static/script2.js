@@ -165,13 +165,14 @@ function appointmentClick(event) {
   }
 }
 function openClinicMap() {
-  const clinicAddress = '三重曜弘診所'; // <-- 你的診所地址
+  const clinicAddress = '曜弘診所 241新北市三重區重新路三段107號1樓';
   const encodedAddress = encodeURIComponent(clinicAddress);
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   if (isMobile) {
     // 手機開啟 Google Maps App
-    window.location.href = `geo:0,0?q=${encodedAddress}`;
+    window.open(`https://www.google.com/maps?q=${encodedAddress}`, '_blank');
+    // window.location.href = `geo:0,0?q=${encodedAddress}`;
   } else {
     // 桌機開啟 Google Maps 網頁（新分頁）
     window.open(`https://www.google.com/maps?q=${encodedAddress}`, '_blank');
