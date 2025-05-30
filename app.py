@@ -28,6 +28,14 @@ def about():
 def equipment():
     return render_template("equipment.html", title="", navbar="green", footer="3rem", footer_two="3rem")
 
+@app.route('/appointment')
+def appointment():
+    return render_template("appointment.html", title="", navbar="green", footer="7.5rem", footer_two="7.5rem")
+
+@app.route('/online-appointment')
+def online_appointment():
+    return render_template("online-appointment.html", title="", navbar="green", footer="7.5rem", footer_two="7.5rem")
+
 @app.route('/events')
 def events():
     return render_template("events.html", title="", navbar="green", footer="7.5rem", footer_two="7.5rem")

@@ -609,6 +609,136 @@ body {
   color: white;
 }
 
+/* Appointment */
+
+.appointment-header {
+  /* height: 10vh; */
+  margin-top: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointment-h1 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.appointment-body {
+  padding: 0 20vw;
+  /* margin-top: 5rem;
+  margin-bottom: 4.5rem; */
+}
+.appointment-card-box .card {
+  border: 1px solid #ba9c69;
+}
+
+.appointment-card-box .card-header {
+  color: #ba9c69 !important;
+  font-weight: 800 !important;
+}
+
+.appointment-p,
+.appointment-p ol {
+  font-size: 16px;
+  color: #a6a6a6 !important;
+}
+
+.appointment-p-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #ba9c69;
+}
+
+.appointment-body p {
+  font-size: 16px;
+  /* line-height: 4rem; */
+  /* font-weight: 200; */
+}
+
+.appointment-button {
+  font-size: 14px;
+  font-weight: 800;
+  color: white !important;
+  background-color: #ce9747 !important;
+}
+
+/* 外框線 */
+.appointment-border {
+  border: 1px solid #ce9747;
+}
+.appointment-grid {
+  border: 1px solid #ce9747;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.appointment-cell {
+  border-bottom: 1px solid #ce9747;
+  border-right: 1px solid #ce9747;
+  text-align: center;
+}
+
+.appointment-row-box {
+  border: 1px solid #ce9747;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* 每格 cell，控制分隔線避免重疊 */
+.appointment-row-box .cell {
+  border-bottom: 1px solid #ce9747;
+  padding: 1rem;
+}
+
+/* 左右中間格子額外加左右邊框，避免邊框加粗 */
+.appointment-row-box .cell.border-x {
+  border-left: 1px solid #ce9747;
+  border-right: 1px solid #ce9747;
+}
+
+/* 最後一行去掉底部邊框 */
+.appointment-row-box .row:last-child .cell {
+  border-bottom: none;
+}
+
+/* 按鈕樣式 */
+.appointment-button {
+  color: white !important;
+  background-color: #ce9747 !important;
+  white-space: normal; /* 按鈕文字可換行 */
+}
+
+/* .appointment-row-box {
+  border-color: #ce9747 !important;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.appointment-row-box .row .col-md-4 .appointment-p {
+  margin-top: 16px;
+  font-size: 16px !important;
+}
+.appointment-border-cell {
+  border-left: 1px solid #c58c3a;
+  border-right: 1px solid #c58c3a;
+}
+.appointment-border-bottom {
+  border-bottom: 1px solid #c58c3a;
+} */
+
+.appointment-image {
+  padding: 0 8rem;
+  margin-bottom: 4rem;
+}
+
+.appointment-image img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
 /* Calendar */
 
 #calendar {
@@ -1163,6 +1293,17 @@ textarea:focus {
   }
   .about-header {
     height: 35vh;
+  }
+  .appointment-body {
+    padding: 0 5vw;
+  }
+  .appointment-row-box .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .appointment-row-box .row .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .logo-container {
     display: grid;

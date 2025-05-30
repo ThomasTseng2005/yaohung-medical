@@ -28,6 +28,8 @@ function burgerClick() {
       'hiddenLinkFadeIn 0.5s ease forwards 0.7s';
     document.getElementById('hid-link-seven').style.animation =
       'hiddenLinkFadeIn 0.5s ease forwards 0.8s';
+    document.getElementById('hid-link-eight').style.animation =
+      'hiddenLinkFadeIn 0.5s ease forwards 0.9s';
     document.getElementById('nav-link-one').style.display = 'none';
     document.getElementById('nav-link-two').style.display = 'none';
     document.getElementById('nav-link-three').style.display = 'none';
@@ -54,6 +56,8 @@ function burgerClick() {
     document.getElementById('hid-link-four').style.animation = '';
     document.getElementById('hid-link-five').style.animation = '';
     document.getElementById('hid-link-six').style.animation = '';
+    document.getElementById('hid-link-seven').style.animation = '';
+    document.getElementById('hid-link-eight').style.animation = '';
     setTimeout(function () {
       try {
         document.getElementById('mainNavbar').style.background = '#B5B682';
@@ -144,18 +148,36 @@ function enableScroll() {
 function appointmentClick(event) {
   event.preventDefault(); // 防止預設的連結行為
   const userAgent = window.navigator.userAgent;
+
   const text =
-    '若有就醫、檢查等需求請來電02-29840101洽詢，受理時間為開診時間：週一至週五 9:00～12:30，14:00～16:30，17:30～20:30\n \n ＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。\n ＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到。\n \n 電話：02-2984-0101\n \n 地址：新北市三重區重新路三段107號1樓';
+    '若有就醫、檢查等需求請來電02-29840101洽詢，受理時間為開診時間：週一至週五 9:00～12:30，14:00～16:30，17:30～20:30\n \n ＊初診僅受理現場掛號，請及早來診，歡迎來電洽詢。\n ＊當診滿額即會截止掛號，時間浮動，請盡早到診或來電掛號/報到。\n \n 電話：02-2984-0101\n \n 地址：新北市三重區重新路三段107號1樓\n \n 按下確認播打電話掛號';
 
   // 行動裝置
   if (/Mobi|Android/i.test(userAgent)) {
     if (confirm(text) == true) {
-      window.location.href = event.currentTarget.href;
+      window.location.href = 'tel:+886229840101';
     } else {
       return;
     }
   } else {
     // 電腦版
-    alert(text);
+    // alert(text);
   }
+}
+function openClinicMap() {
+  const clinicAddress = '三重曜弘診所'; // <-- 你的診所地址
+  const encodedAddress = encodeURIComponent(clinicAddress);
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // 手機開啟 Google Maps App
+    window.location.href = `geo:0,0?q=${encodedAddress}`;
+  } else {
+    // 桌機開啟 Google Maps 網頁（新分頁）
+    window.open(`https://www.google.com/maps?q=${encodedAddress}`, '_blank');
+  }
+}
+
+function onlineAppointmentClick() {
+  window.location.href = '/online-appointment';
 }

@@ -28,6 +28,8 @@ function burgerClick() {
       'hiddenLinkFadeIn 0.5s ease forwards 0.7s';
     document.getElementById('hid-link-seven').style.animation =
       'hiddenLinkFadeIn 0.5s ease forwards 0.8s';
+    document.getElementById('hid-link-eight').style.animation =
+      'hiddenLinkFadeIn 0.5s ease forwards 0.9s';
     document.getElementById('nav-link-one').style.display = 'none';
     document.getElementById('nav-link-two').style.display = 'none';
     document.getElementById('nav-link-three').style.display = 'none';
@@ -55,7 +57,7 @@ function burgerClick() {
     document.getElementById('hid-link-five').style.animation = '';
     document.getElementById('hid-link-six').style.animation = '';
     document.getElementById('hid-link-seven').style.animation = '';
-    document.getElementById('hid-link-seven').style.animation = '';
+    document.getElementById('hid-link-eight').style.animation = '';
     setTimeout(function () {
       try {
         document.getElementById('mainNavbar').style.background = '';

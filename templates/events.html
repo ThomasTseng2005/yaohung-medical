@@ -1,5 +1,4 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 
 <!--
 <body onresize="calendarSize()">
@@ -12,9 +11,17 @@
 </body>
 
 -->
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}"
+></script>
 
 <div id="event-wrapper">
-    <iframe src="https://3531026546.plusonemed.com/progress" title="Clinic Time" id="event-iframe"></iframe>
+  <iframe
+    src="https://3531026546.plusonemed.com/progress"
+    title="Clinic Time"
+    id="event-iframe"
+  ></iframe>
 </div>
 
 {% endblock %}

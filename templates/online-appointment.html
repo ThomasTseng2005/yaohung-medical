@@ -1,0 +1,89 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}"
+></script>
+<div class="appointment-header mb-3">
+  <h1 class="appointment-h1">網路預約</h1>
+</div>
+<section>
+  <div class="appointment-body">
+    <p class="appointment-p">
+      <span class="appointment-p-title">曜弘診所｜網路預約須知</span>
+      <br />
+      為維護診療品質，請配合以下預約規則，感謝您的體諒與支持💙
+    </p>
+
+    <hr />
+    <p class="appointment-p">
+      <span class="appointment-p-title">預約規則說明</span>
+      <br />
+      <span>✅ 初診請選擇「初診時段」</span>
+      <br />
+      <span>🔁 複診請選擇「複診時段」</span>
+      <br />
+      <span class="ml-3"
+        >🔸若預約錯誤（如初診選複診時段），將直接取消預約。</span
+      >
+      <br />
+      <span>🕒 請於就診前 3 日內取消或重新預約</span>
+      <br />
+      <span>🚫 未到診者將停用網路預約功能</span>
+    </p>
+
+    <hr />
+    <p class="appointment-p">
+      <span class="appointment-p-title">⏰ 看診時段提醒</span>
+      <br />
+      🟦 週一、週二早診：僅提供門診服務
+      <br />
+      🟨 其他時段：門診與胃腸鏡交替進行
+      <br />
+      📞 建議提前查詢當日看診進度或電洽櫃檯（02-2984-0101）
+      <br />
+      🧑⚕️ 如遇人數較多，敬請耐心等候，醫師將逐一進行專業診療
+    </p>
+    <hr />
+  </div>
+</section>
+<section>
+  <div class="mt-5 mb-3">
+    <h1 class="appointment-h1 text-center">預約方式</h1>
+  </div>
+  <div class="container appointment-card-box">
+    <div class="row">
+      <div class="col-12 mb-5 col-md-6">
+        <div class="card">
+          <h5 class="card-header">Line 預約</h5>
+          <div class="card-body">
+            <p class="card-text py-2">
+              <button
+                class="btn btn-block appointment-button"
+                onclick="window.open('https://3531026546.plusonemed.com/appointment')"
+              >
+                曜弘診所官方 Line 帳號
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mb-5 col-md-6">
+        <div class="card">
+          <h5 class="card-header">網站線上預約</h5>
+          <div class="card-body">
+            <p class="card-text py-2">
+              <button
+                class="btn btn-block appointment-button"
+                onclick="window.open('https://3531026546.plusonemed.com/web-login')"
+              >
+                線上預約
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
