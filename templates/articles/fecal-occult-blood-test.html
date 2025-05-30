@@ -1,44 +1,65 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 
-<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
 
 <section class="about-header" id="articles-header">
   <h1 class="about-h1">曜弘報報</h1>
 </section>
 
-<section class="about-body article-detail" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-  data-aos-easing="ease-in-out">
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
   <div class="article-detail-title">
     <h2>糞便潛血檢查快速瞭解你的腸道問題</h2>
   </div>
 </section>
-<section class="article-detail-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-  data-aos-easing="ease-in-out">
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
   <div class="row">
-    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-start">
-      <img src="{{ url_for('static', filename='articlephoto/article-05-fecal-occult-blood-test.jpg') }}" alt="糞便潛血" />
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-05-fecal-occult-blood-test.jpg') }}"
+        alt="糞便潛血"
+      />
     </div>
     <div class="col-12 col-lg-8 article-detail-content">
       <p>
-        國健署資料指出每20位糞便潛血呈現陽性者，至少有一位是大腸癌患者，而一半以上有未來可能癌化的 <strong>線瘤性息肉</strong>，真的不能輕視這件事情。
+        國健署資料指出每20位糞便潛血呈現陽性者，至少有一位是大腸癌患者，而一半以上有未來可能癌化的
+        <strong>線瘤性息肉</strong>，真的不能輕視這件事情。
       </p>
       <p><strong>【糞便潛血檢查】</strong></p>
       <p>
-        這個聽起來有點陌生，但其實它對我們的健康非常重要，尤其是對於早期發現大腸癌非常有效🤞<br>
+        這個聽起來有點陌生，但其實它對我們的健康非常重要，尤其是對於早期發現大腸癌非常有效🤞<br />
         簡單來說，就是檢測你大便中是否含有微量的血液，因為某些腸道問題（如大腸癌、息肉、發炎性腸道疾病或腸道出血等）
         可能不容易看出來，但通過這個檢查可以發現潛在的問題。
       </p>
       <p>糞便潛血檢查的好處：</p>
       <ul>
         <li>
-          <strong>無痛、無創：</strong>糞便潛血檢查是非常簡單且非侵入性的檢查，只需要取一小塊糞便樣本，就能了解腸道是否有異常（有一部分異常仍篩檢不出來！）。
+          <strong>無痛、無創：</strong
+          >糞便潛血檢查是非常簡單且非侵入性的檢查，只需要取一小塊糞便樣本，就能了解腸道是否有異常（有一部分異常仍篩檢不出來！）。
         </li>
         <li>
-          <strong>早期發現，早期治療：</strong>這項檢查對早期發現腸道疾病（如大腸癌）非常有效，能幫助你及早尋求醫療介入，增加治療成功的機會。
+          <strong>早期發現，早期治療：</strong
+          >這項檢查對早期發現腸道疾病（如大腸癌）非常有效，能幫助你及早尋求醫療介入，增加治療成功的機會。
         </li>
         <li>
-          <strong>預防大於治療：</strong>定期檢查能發現微小的異常，預防疾病的發展，避免嚴重後果。
+          <strong>預防大於治療：</strong
+          >定期檢查能發現微小的異常，預防疾病的發展，避免嚴重後果。
         </li>
       </ul>
       <p>🔍誰應該做糞便潛血檢查？</p>
@@ -48,9 +69,7 @@
       <p>
         最重要的是，依據臨床經驗發現，具家族大腸癌病史者發現腺瘤年齡制逐漸降低，故若是有大腸癌家族病史的民眾建議至少35歲以上一定要安排大腸鏡檢查。
       </p>
-      <p>
-        當然，不限年紀定期做檢查可以有效做預防大腸癌的發生。
-      </p>
+      <p>當然，不限年紀定期做檢查可以有效做預防大腸癌的發生。</p>
       <p>
         藉由糞便潛血的篩檢，再進而大腸鏡做病灶確認，通常比較早期的大腸癌可以手術及早切除，
         甚至有些狀況下直接使用大腸鏡就可以做的完整治療，不用在肚肚上面留下傷口❤️。
@@ -63,10 +82,14 @@
 </section>
 
 <!-- SEO Meta Tags -->
-<meta name="keywords"
-  content="糞便潛血, 線瘤性息肉, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 消化系專科, 內視鏡專科, 內視鏡技術師資格, 210度可彎前鏡頭視野無死角,富士腸道內視鏡AI影像判讀設備 (CAD EYE), CAD EYE ">
-<meta name="description"
-  content="糞便潛血檢查快速無痛！每20位陽性者至少1位是大腸癌患者。了解檢查好處：早期發現大腸癌、預防疾病進展。45歲以上民眾可享補助，每兩年一次。定期檢查，守護腸道健康！。洽詢 02-29840101！">
+<meta
+  name="keywords"
+  content="糞便潛血, 線瘤性息肉, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 消化系專科, 內視鏡專科, 內視鏡技術師資格, 210度可彎前鏡頭視野無死角,富士腸道內視鏡AI影像判讀設備 (CAD EYE), CAD EYE "
+/>
+<meta
+  name="description"
+  content="糞便潛血檢查快速無痛！每20位陽性者至少1位是大腸癌患者。了解檢查好處：早期發現大腸癌、預防疾病進展。45歲以上民眾可享補助，每兩年一次。定期檢查，守護腸道健康！。洽詢 02-29840101！"
+/>
 <title>糞便潛血</title>
 
 {% endblock %}

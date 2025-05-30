@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"></script>
 
 <section class="about-header" id="articles-header">
   <h1 class="about-h1">曜弘報報</h1>

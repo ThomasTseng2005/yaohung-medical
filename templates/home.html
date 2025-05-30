@@ -2,7 +2,7 @@
 
 <script
   type="text/javascript"
-  src="{{ url_for('static', filename='script1.js') }}"
+  src="{{ url_for('static', filename='script1.js') }}?v={{ timestamp }}"
 ></script>
 <script type="text/javascript">
   var _jf = _jf || [];
@@ -151,7 +151,10 @@
       <h2 class="header-h2">
         以有溫度的生活關懷，將多年醫學中心培訓之醫療品質帶入病人的家庭，開啟一扇健康與生活品質改善的門。
       </h2>
-      <a href="tel:+886 22984-0101" onclick="return appointmentClick(event);"
+      <!-- <a href="tel:+886 22984-0101" onclick="return appointmentClick(event);"
+        ><button id="header-button">預約門診</button></a
+      > -->
+      <a href="/appointment"
         ><button id="header-button">預約門診</button></a
       >
     </div>

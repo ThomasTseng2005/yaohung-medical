@@ -1,23 +1,40 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 
-<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
 
 <section class="about-header" id="articles-header">
   <h1 class="about-h1">曜弘報報</h1>
 </section>
 
-<section class="about-body article-detail" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-  data-aos-easing="ease-in-out">
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
   <div class="article-detail-title">
     <h2>照胃鏡痛嗎？</h2>
   </div>
 </section>
-<section class="article-detail-body" data-aos="fade-in" data-aos-delay="50" data-aos-duration="700"
-  data-aos-easing="ease-in-out">
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
   <div class="row">
-    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-start">
-      <img src="{{ url_for('static', filename='articlephoto/article-03-gastroscopy.jpg') }}" alt="胃食道逆流" />
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-03-gastroscopy.jpg') }}"
+        alt="胃食道逆流"
+      />
     </div>
     <div class="col-12 col-lg-8 article-detail-content">
       <p>
@@ -70,10 +87,14 @@
 </section>
 
 <!-- SEO Meta Tags -->
-<meta name="keywords"
-  content="照胃鏡痛嗎, 舒眠減痛, 咽喉局部麻醉, 選擇不同內視鏡, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 消化系專科, 內視鏡專科, 內視鏡技術師資格">
-<meta name="description"
-  content="胃鏡檢查很不舒服？其實醫療技術已進步許多！了解舒眠減痛、咽喉局部麻醉、不同內視鏡選擇的優劣與適用情況。曜弘診所提供專業胃鏡檢查，助您輕鬆面對不適，提升健康生活品質。洽詢 02-29840101！">
+<meta
+  name="keywords"
+  content="照胃鏡痛嗎, 舒眠減痛, 咽喉局部麻醉, 選擇不同內視鏡, 舒眠胃鏡推薦, 田名弘, 李儀鳴, 三重, 肝膽腸胃科推薦, 腸道內視鏡推薦, 新北胃鏡推薦, 照胃鏡, 消化系專科, 內視鏡專科, 內視鏡技術師資格"
+/>
+<meta
+  name="description"
+  content="胃鏡檢查很不舒服？其實醫療技術已進步許多！了解舒眠減痛、咽喉局部麻醉、不同內視鏡選擇的優劣與適用情況。曜弘診所提供專業胃鏡檢查，助您輕鬆面對不適，提升健康生活品質。洽詢 02-29840101！"
+/>
 <title>照胃鏡痛嗎？</title>
 
 {% endblock %}

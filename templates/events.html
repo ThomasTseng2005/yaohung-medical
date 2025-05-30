@@ -4,7 +4,7 @@
 <body onresize="calendarSize()">
 
 <script type="text/javascript" src="{{ url_for('static', filename='calendar.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"></script>
 
 <div id='calendar'></div>
 
@@ -13,7 +13,7 @@
 -->
 <script
   type="text/javascript"
-  src="{{ url_for('static', filename='script2.js') }}"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
 ></script>
 
 <div id="event-wrapper">
