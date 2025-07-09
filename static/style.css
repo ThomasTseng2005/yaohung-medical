@@ -349,17 +349,23 @@ body {
   color: #f6d1a6;
   border: 3px solid #ffffff !important;
 }
+.office-hours .hours-off {
+  font-size: 2.875rem;
+  background-color: #ffffff;
+  color: #f6d1a6;
+  border: 3px solid #ffffff !important;
+}
 .doctor-info .office-hours .title {
   margin-top: 2rem;
 }
 .office-hours .hours .icon-star {
-  width: 3.75rem;
+  width: 3.5rem;
 }
 .office-hours .hours .icon-grass {
-  width: 3.75rem;
+  width: 3.5rem;
 }
 .office-hours .hours .icon-dot {
-  width: 3.75rem;
+  width: 3.5rem;
 }
 .icon-star {
   width: 1.5rem;
