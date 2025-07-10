@@ -1112,7 +1112,7 @@ textarea:focus {
     position: relative;
     left: -5rem;
     width: calc(100% + 10rem);
-    padding: 3rem;
+    padding: 3rem 6rem;
     margin: 3rem 0;
   }
   /* #doctor-description{

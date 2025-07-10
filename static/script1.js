@@ -215,7 +215,7 @@ $(document).ready(function () {
     });
 
   $('#newsModal1').on('hidden.bs.modal', function () {
-    $('#newsModal1Video').remove(); // 移除 iframe
+    // $('#newsModal1Video').remove(); // 移除 iframe
     $('#newsModal2').modal('show');
   });
 });
