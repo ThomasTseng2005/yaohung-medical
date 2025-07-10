@@ -186,25 +186,25 @@ $(document).ready(function () {
     .then((response) => response.json())
     .then((data) => {
       const now = new Date();
-      console.log('now', now);
+      // console.log('now', now);
       const notifications = data.notifications || [];
-      console.log('notifications', notifications);
+      // console.log('notifications', notifications);
 
       // 檢查是否有任何一組區間符合現在時間
       const isInNotificationPeriod = notifications.some((period) => {
         const start = new Date(period.startDate);
         const end = new Date(period.endDate);
-        console.log('start', start);
-        console.log('end', end);
+        // console.log('start', start);
+        // console.log('end', end);
         return now >= start && now <= end;
       });
-      console.log('isInNotificationPeriod', isInNotificationPeriod);
+      // console.log('isInNotificationPeriod', isInNotificationPeriod);
 
       if (isInNotificationPeriod) {
         $('#newsModal').modal('show');
         $('#newsModal').on('hidden.bs.modal', function () {
           $('#newsModal1').modal('show');
-          console.log($('#newsModal1Video'));
+          // console.log($('#newsModal1Video'));
         });
       } else {
         $('#newsModal1').modal('show');
@@ -216,5 +216,6 @@ $(document).ready(function () {
 
   $('#newsModal1').on('hidden.bs.modal', function () {
     $('#newsModal1Video').remove(); // 移除 iframe
+    $('#newsModal2').modal('show');
   });
 });
