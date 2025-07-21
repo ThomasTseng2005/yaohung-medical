@@ -1,13 +1,11 @@
 {% extends "layout.html" %} {% block content %}
 
-<script
-  type="text/javascript"
-  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
-></script>
-<div class="appointment-header mb-3">
-  <h1 class="appointment-h1">門診預約</h1>
-</div>
+<script type="text/javascript" src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"></script>
+
 <section>
+  <div class="appointment-header mb-3">
+    <h1 class="appointment-h1">門診預約</h1>
+  </div>
   <div class="appointment-body">
     <p class="appointment-p">
       <span class="appointment-p-title">網路預約開放中｜看診提醒</span>
@@ -16,17 +14,17 @@
       電話掛號/現場掛號同步進行，歡迎來電洽詢或提前到診。
       <br />
       點擊查看醫師介紹和門診時間表：
-      <div class="row mb-3">
-        <div class="col-12 col-md-4 mb-2 mb-md-0">
-          <a href="/#doctors-1" style="text-decoration: none; font-size: 1.25rem; font-weight: bold;">田名弘 院長</a>
-        </div>
-        <div class="col-12 col-md-4 mb-2 mb-md-0">
-          <a href="/#doctors-2" style="text-decoration: none; font-size: 1.25rem; font-weight: bold;">李儀鳴 醫師</a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="/#doctors-3" style="text-decoration: none; font-size: 1.25rem; font-weight: bold;">林志杰 醫師</a>
-        </div>
+    <div class="row mb-3">
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <a href="/#doctors-1" style="text-decoration: none; font-size: 1.25rem; font-weight: bold;">田名弘 院長</a>
       </div>
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <a href="/#doctors-2" style="text-decoration: none; font-size: 1.25rem; font-weight: bold;">李儀鳴 醫師</a>
+      </div>
+      <div class="col-12 col-md-4">
+        <a href="/#doctors-3" style="text-decoration: none; font-size: 1.25rem; font-weight: bold;">林志杰 醫師</a>
+      </div>
+    </div>
     </p>
     <hr />
     <p class="appointment-p">
@@ -55,116 +53,50 @@
   </div>
 </section>
 <section>
-  <div class="mt-5 mb-3">
-    <h1 class="appointment-h1 text-center">預約方式</h1>
-  </div>
-  <div class="container appointment-card-box">
-    <div class="row">
-      <div class="col-12 mb-5 col-md-4">
-        <div class="card">
-          <h5 class="card-header">電話預約</h5>
-          <div class="card-body">
-            <p class="card-text py-2">
-              <button
-                class="btn btn-block appointment-button"
-                onclick="return appointmentClick(event);"
-              >
-                02-2984-0101
-              </button>
-            </p>
+  <div class="appointment-wrapper">
+    <div class="mb-3">
+      <h1 class="appointment-h1 text-center">預約方式</h1>
+    </div>
+    <div class="container appointment-card-box">
+      <div class="row">
+        <div class="col-12 mb-5 col-md-4">
+          <div class="card">
+            <h5 class="card-header">電話預約</h5>
+            <div class="card-body">
+              <p class="card-text py-2">
+                <button class="btn btn-block appointment-button" onclick="return appointmentClick(event);">
+                  02-2984-0101
+                </button>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 mb-5 col-md-4">
-        <div class="card">
-          <h5 class="card-header">網路預約</h5>
-          <div class="card-body">
-            <p class="card-text py-2">
-              <button
-                class="btn btn-block appointment-button"
-                onclick="onlineAppointmentClick()"
-              >
-                查看網路預約方法
-              </button>
-            </p>
+        <div class="col-12 mb-5 col-md-4">
+          <div class="card">
+            <h5 class="card-header">網路預約</h5>
+            <div class="card-body">
+              <p class="card-text py-2">
+                <button class="btn btn-block appointment-button" onclick="onlineAppointmentClick()">
+                  查看網路預約方法
+                </button>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 mb-5 col-md-4">
-        <div class="card">
-          <h5 class="card-header">現場預約/掛號</h5>
-          <div class="card-body">
-            <p class="card-text py-2">
-              <button
-                class="btn btn-block appointment-button"
-                onclick="openClinicMap()"
-              >
-                前往本診櫃台掛號
-              </button>
-            </p>
+        <div class="col-12 mb-5 col-md-4">
+          <div class="card">
+            <h5 class="card-header">現場預約/掛號</h5>
+            <div class="card-body">
+              <p class="card-text py-2">
+                <button class="btn btn-block appointment-button" onclick="openClinicMap()">
+                  前往本診櫃台掛號
+                </button>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div class="container">
-    <div class="row appointment-border rounded">
-      <div
-        class="col-12 col-md-4 order-1 order-md-1 text-center appointment-border py-4"
-      >
-        <div class="appointment-p"><b>電話預約</b></div>
-      </div>
-      <div
-        class="col-12 col-md-4 order-3 order-md-2 text-center appointment-border py-4"
-      >
-        <div class="appointment-p"><b>網路預約</b></div>
-      </div>
-      <div
-        class="col-12 col-md-4 order-5 order-md-3 text-center appointment-border py-4"
-      >
-        <div class="appointment-p"><b>現場預約/掛號</b></div>
-      </div>
-      <div
-        class="col-12 col-md-4 order-2 order-md-4 text-center appointment-border py-4"
-      >
-        <button class="btn appointment-button">02-2984-0101</button>
-      </div>
-      <div
-        class="col-12 col-md-4 order-4 order-md-5 text-center appointment-border py-4"
-      >
-        <button class="btn appointment-button">查看網路預約方法</button>
-      </div>
-      <div
-        class="col-12 col-md-4 order-6 order-md-6 text-center appointment-border py-4"
-      >
-        <button class="btn appointment-button">前往本診櫃台掛號</button>
-      </div>
-    </div>
-  </div>
-  <br />
-  <div class="container appointment-row-box">
-    <div class="row no-gutters">
-      <div class="col-12 col-md-4 order-1 order-md-1 cell text-center">
-        <p class="appointment-p"><b>電話預約</b></p>
-      </div>
-      <div class="col-12 col-md-4 order-3 order-md-2 cell border-x text-center">
-        <p class="appointment-p"><b>網路預約</b></p>
-      </div>
-      <div class="col-12 col-md-4 order-5 order-md-3 cell text-center">
-        <p class="appointment-p"><b>現場預約/掛號</b></p>
-      </div>
-    </div>
-    <div class="row no-gutters">
-      <div class="col-12 col-md-4 order-2 order-md-4 cell text-center">
-        <button class="btn appointment-button">02-2984-0101</button>
-      </div>
-      <div class="col-12 col-md-4 order-4 order-md-5 cell border-x text-center">
-        <button class="btn appointment-button">查看網路預約方法</button>
-      </div>
-      <div class="col-12 col-md-4 order-6 order-md-6 cell text-center">
-        <button class="btn appointment-button">前往本診櫃台掛號</button>
-      </div>
-    </div>
-  </div> -->
 </section>
 {% endblock %}
