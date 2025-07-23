@@ -640,7 +640,7 @@ body {
   /* margin-top: 5rem;
   margin-bottom: 4.5rem; */
 }
-.appointment-wrapper{
+.appointment-wrapper {
   position: relative;
   top: 7rem;
 }
@@ -955,6 +955,15 @@ body {
   font-size: 1.45rem;
   line-height: 3rem;
   font-weight: 200;
+}
+.article-video-custom {
+  width: 100%;
+  /* 確保充滿父容器 */
+  height: auto;
+  /* 保持比例 */
+  display: block;
+  /* 確保按塊級元素渲染 */
+  border-radius: 10px;
 }
 /* Contact */
 

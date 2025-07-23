@@ -4,20 +4,35 @@
   type="text/javascript"
   src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
 ></script>
-<style>
-  .video-custom {
-    width: 100%;
-    /* 確保充滿父容器 */
-    height: auto;
-    /* 保持比例 */
-    display: block;
-    /* 確保按塊級元素渲染 */
-  }
-</style>
 <section class="about-header" id="articles-header">
   <h1 class="about-h1">曜弘報報</h1>
 </section>
 <section id="article-grid">
+  <div
+    class="article-wrapper"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  >
+    <a href="/articles/colonoscopy-polyp-screening">
+      <video class="article-video-custom" autoplay loop muted playsinline>
+        <source
+          src="{{ url_for('static', filename='articlephoto/article-15-colon-polyp.mp4') }}"
+          type="video/mp4"
+        />
+        您的瀏覽器不支援 HTML5 視訊播放。
+      </video>
+    </a>
+    <div class="article-content">
+      <h3>別讓小息肉變大麻煩，守護你的腸道健康💪</h3>
+      <p>
+        👉 身體沒症狀 ≠ 沒問題！<br />
+        👉 大腸癌很多時候，就是在「無聲無息」中發生的。現在就該檢查！
+      </p>
+      <a href="/articles/colonoscopy-polyp-screening">閱讀更多</a>
+    </div>
+  </div>
   <div
     class="article-wrapper"
     data-aos="fade-in"
@@ -183,7 +198,7 @@
     data-aos-easing="ease-in-out"
   >
     <a href="/articles/colon-polyp">
-      <video class="video-custom" autoplay loop muted playsinline>
+      <video class="article-video-custom" autoplay loop muted playsinline>
         <source
           src="{{ url_for('static', filename='articlephoto/article-06-colon-polyp.mp4') }}"
           type="video/mp4"

@@ -4,16 +4,6 @@
   type="text/javascript"
   src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
 ></script>
-<style>
-  .video-custom {
-    width: 100%;
-    /* 確保充滿父容器 */
-    height: auto;
-    /* 保持比例 */
-    display: block;
-    /* 確保按塊級元素渲染 */
-  }
-</style>
 <section class="about-header" id="articles-header">
   <h1 class="about-h1">曜弘報報</h1>
 </section>
@@ -40,7 +30,7 @@
     <div
       class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
     >
-      <video class="video-custom" autoplay loop muted playsinline>
+      <video class="article-video-custom" autoplay loop muted playsinline>
         <source
           src="{{ url_for('static', filename='articlephoto/article-06-colon-polyp.mp4') }}"
           type="video/mp4"
