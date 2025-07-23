@@ -189,7 +189,10 @@ $(document).ready(function () {
       // console.log('now', now);
       const notifications = data.notifications || [];
       // console.log('notifications', notifications);
-
+      // 如果網址有 hash（如 #doctors），則不顯示任何 Modal
+      if (window.location.hash) {
+        return;
+      }
       // 檢查是否有任何一組區間符合現在時間
       const isInNotificationPeriod = notifications.some((period) => {
         const start = new Date(period.startDate);
