@@ -94,15 +94,23 @@
 >
   <div class="equipment-title">
     <h2>高階內視鏡</h2>
-    <h3>
+    <!-- <h3>
       本院與台大醫院同步引進富士 Fujifilm 最新 7000
       型內視鏡檢查系統，此機型為目前臨床最高解析度電子式腸胃鏡，世界專利 LCI
       系統得精準辨識病灶，提供來院病患最高品質的醫療服務。
-    </h3>
+    </h3> -->
   </div>
 </section>
 <section class="about-image equipment-image">
-  <div class="row">
+  <img
+    src="{{ url_for('static', filename='fujifilm-8000.jpg') }}"
+    alt="Equipment Image 2"
+    data-aos="fade-in"
+    data-aos-delay="50"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+  />
+  <!-- <div class="row">
     <div class="col-12 col-lg-6">
       <img
         src="{{ url_for('static', filename='fujifilm-7000-1.png') }}"
@@ -123,9 +131,9 @@
         data-aos-easing="ease-in-out"
       />
     </div>
-  </div>
+  </div> -->
 </section>
-<section class="about-image">
+<!-- <section class="about-image">
   <div class="equipment-video">
     <iframe
       class="video"
@@ -138,8 +146,8 @@
     >
     </iframe>
   </div>
-</section>
-<section
+</section> -->
+<!-- <section
   class="about-body equipment-body"
   data-aos="fade-in"
   data-aos-delay="50"
@@ -177,7 +185,7 @@
       >大腸鏡軟硬可調、彈性優良，易旋轉、彎曲的檢查管徑使檢查過程更加舒適、順暢。
     </p>
   </div>
-</section>
+</section> -->
 <section class="about-image equipment-image">
   <img
     src="{{ url_for('static', filename='equipment-image2.jpg') }}"
