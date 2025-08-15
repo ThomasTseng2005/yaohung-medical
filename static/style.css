@@ -655,9 +655,13 @@ body {
 }
 
 .appointment-p,
-.appointment-p ol {
+.appointment-ol {
   font-size: 16px;
   color: #a6a6a6 !important;
+}
+
+.appointment-ol {
+  margin-left: -16px;
 }
 
 .appointment-p-title {
@@ -752,6 +756,12 @@ body {
   width: 100%;
   object-fit: contain;
   border-radius: 10px;
+}
+
+.appointment-subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #b6c491 !important;
 }
 
 /* Calendar */
