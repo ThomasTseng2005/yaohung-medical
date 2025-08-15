@@ -384,6 +384,64 @@ body {
   margin-left: 1.5rem;
 }
 
+.opd-schedule-grid {
+  display: grid;
+  grid-template-columns: 2fr;
+  padding: 4rem;
+}
+
+.opd-schedule-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.3rem;
+  margin-right: 1.4rem;
+  max-width: 100%;
+}
+.opd-schedule-info h2 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.schedule-hours {
+  width: 100%;
+}
+.schedule-hours .row {
+  padding: 0.15rem;
+}
+
+.schedule-hours .type {
+  font-size: 1rem;
+  background-color: #5a6421;
+  color: #f6d1a6;
+  border: 3px solid #ffffff !important;
+}
+
+.schedule-hours .doctor {
+  font-size: 1.5rem;
+  background-color: #5a6421;
+  color: #ffffff;
+  border: 3px solid #ffffff !important;
+}
+.schedule-hours .doctor-off {
+  font-size: 2.875rem;
+  background-color: #ffffff;
+  color: #f6d1a6;
+  border: 3px solid #ffffff !important;
+}
+.schedule-hours .title {
+  margin-top: 2rem;
+}
+.schedule-hours .type .icon-star {
+  width: 1.75rem !important;
+}
+.schedule-hours .type .icon-grass {
+  width: 1.75rem !important;
+}
+.schedule-hours .type .icon-dot {
+  width: 1.75rem !important;
+}
+
 .medical-wrapper {
   background: #fbf7f3;
   position: relative;
@@ -418,6 +476,7 @@ body {
 
 .bio-wrapper {
   position: relative;
+  background-color: #fbf7f3;
 }
 
 .bio-grid {
@@ -655,9 +714,13 @@ body {
 }
 
 .appointment-p,
-.appointment-p ol {
+.appointment-ol {
   font-size: 16px;
   color: #a6a6a6 !important;
+}
+
+.appointment-ol {
+  margin-left: -16px;
 }
 
 .appointment-p-title {
@@ -670,6 +733,13 @@ body {
   font-size: 16px;
   /* line-height: 4rem; */
   /* font-weight: 200; */
+}
+
+.appointment-link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #b6c491 !important;
 }
 
 .appointment-button {
@@ -752,6 +822,12 @@ body {
   width: 100%;
   object-fit: contain;
   border-radius: 10px;
+}
+
+.appointment-subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #b6c491 !important;
 }
 
 /* Calendar */
@@ -1159,6 +1235,23 @@ textarea:focus {
     margin-left: 1.3rem;
     margin-right: 1.4rem;
   }
+  .opd-schedule-grid {
+    grid-template-columns: 1fr;
+    padding: 4rem 0rem;
+  }
+  .opd-schedule-info .col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .opd-schedule-info .type-text {
+    display: none !important;
+  }
+  .schedule-hours .type .icon-star,
+  .schedule-hours .type .icon-grass,
+  .schedule-hours .type .icon-dot {
+    width: 2.5rem;
+  }
+
   .footer-copyright {
     font-size: 1.1rem;
   }
