@@ -61,8 +61,7 @@ def contact():
         phone = request.form["phone"]
         subject = request.form["subject"]
         body = request.form["body"]
-        to_email = "newmoking1129@gmail.com"
-        to_email = "0830thomastseng@gmail.com"
+        to_email = "yohunggi@gmail.com"
         to_email_two = str(email)
         from_email = "yaohungclinic@gmail.com"
         username = "yaohungclinic@gmail.com"
