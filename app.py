@@ -4,6 +4,9 @@ import smtplib, ssl
 import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from dotenv import load_dotenv
+
+load_dotenv()  # 讀取 .env
 
 app = Flask(__name__)
 
@@ -63,9 +66,11 @@ def contact():
         body = request.form["body"]
         to_email = "yaohunggi@gmail.com"
         to_email_two = str(email)
-        from_email = "yaohungclinic@gmail.com"
-        username = "yaohungclinic@gmail.com"
-        password = "clinic2020"
+        from_email = "曜弘診所-聯絡我們<yaohunggi@gmail.com>"
+        username = os.getenv("MAIL_USERNAME", "").strip()
+        password = os.getenv("MAIL_PASSWORD", "").strip()
+        # print(f"Username: '[{username}]', Length: {len(username)}")
+        # print(f"Password: '[{password}]', Length: {len(password)}")
         main_message = 'Subject: {}\n\n{}'.format(subject, "From: " + str(name) + "\n\n" + "Email: " + str(
             email) + "\n\n" + "Phone: " + str(phone) + "\n\n" + "Body: \n" + str(body))
         msg = MIMEMultipart('alternative')
@@ -105,7 +110,9 @@ def contact():
             server.sendmail(from_email, to_email_two, msg.as_string())
             server.quit()
             response = "傳送成功！"
-        except:
+        except Exception as e:
             response = "傳送失敗！"
+            print("Email error:", e)
+            
     return render_template("contact.html", title="", navbar="green", footer="2rem", footer_two="2rem", response=response)
 
