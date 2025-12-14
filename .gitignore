@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.Python
+build/
+dist/
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Flask specific
+instance/
+.flaskenv
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS generated files
+.Trash-
