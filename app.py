@@ -60,6 +60,12 @@ def article(article):
 def contact():
     response = ""
     if request.method == "POST":
+        # Honeypot Verification
+        if request.form.get("fax"):
+            print("Honeypot triggered!")
+            # Returen fake success to fool the bot
+            return render_template("contact.html", title="", navbar="green", footer="2rem", footer_two="2rem", response="傳送成功！")
+
         # Turnstile Verification
         turnstile_response = request.form.get("cf-turnstile-response")
         turnstile_secret = os.getenv("TURNSTILE_SECRET_KEY")
