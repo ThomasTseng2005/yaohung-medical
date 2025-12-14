@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, request, session, send_from_directory
 import os, sys
+import requests
 import smtplib, ssl
 import time
 from email.mime.text import MIMEText
@@ -59,6 +60,33 @@ def article(article):
 def contact():
     response = ""
     if request.method == "POST":
+        # Honeypot Verification
+        if request.form.get("fax"):
+            print("Honeypot triggered!")
+            # Returen fake success to fool the bot
+            return render_template("contact.html", title="", navbar="green", footer="2rem", footer_two="2rem", response="傳送成功！")
+
+        # Turnstile Verification
+        turnstile_response = request.form.get("cf-turnstile-response")
+        turnstile_secret = os.getenv("TURNSTILE_SECRET_KEY")
+        verify_url = os.getenv("VERIFY_URL", "https://challenges.cloudflare.com/turnstile/v0/siteverify")
+
+        if turnstile_response and turnstile_secret:
+            data = {
+                "secret": turnstile_secret,
+                "response": turnstile_response
+            }
+            try:
+                verify_req = requests.post(verify_url, data=data)
+                verify_res = verify_req.json()
+                if not verify_res.get("success"):
+                    return render_template("contact.html", title="", navbar="green", footer="2rem", footer_two="2rem", response="驗證失敗，請重試！")
+            except Exception as e:
+                print(f"Turnstile error: {e}")
+                return render_template("contact.html", title="", navbar="green", footer="2rem", footer_two="2rem", response="驗證錯誤，請稍後再試！")
+        else:
+             return render_template("contact.html", title="", navbar="green", footer="2rem", footer_two="2rem", response="請完成驗證！")
+
         name = request.form["name"]
         email = request.form["email"]
         phone = request.form["phone"]

@@ -4,7 +4,12 @@
   type="text/javascript"
   src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
 ></script>
-
+<script
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer
+></script>
+<link rel="preconnect" href="https://challenges.cloudflare.com">
 <section class="about-header" id="contact-header">
   <h1 class="about-h1">聯絡我們</h1>
 </section>
@@ -53,7 +58,13 @@
       <label for="body">內容</label>
       <br />
       <textarea name="body" id="body" required></textarea>
+      <!-- Honeypot field for bots -->
+      <div style="display: none !important;" aria-hidden="true">
+        <label for="fax">Fax</label>
+        <input type="text" name="fax" id="fax" tabindex="-1" autocomplete="off">
+      </div>
       <br />
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAACGlA5Jktk4tyZji"></div>
       <button type="submit" onclick="sending()">傳送</button>
       <h2 id="contact-message">{{ response }}</h2>
     </form>
