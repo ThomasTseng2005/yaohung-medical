@@ -1,0 +1,86 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>脂肪肝 —【無聲的肝臟警報】外表看不出來的健康危機‼️</h2>
+  </div>
+</section>
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-22-fatty-liver.jpg') }}"
+        alt="脂肪肝"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        肝臟不會喊痛，但它會「默默變胖」。<br>
+        台灣約每三人就一人有脂肪肝<br>
+        你可能也是其中之一😨
+      </p>
+      <p>🩺 <strong>常見原因</strong></p>
+      <ul>
+        <li>高油高糖飲食</li>
+        <li>飲酒過量</li>
+        <li>缺乏運動</li>
+        <li>三高（血糖、血壓、血脂）</li>
+      </ul>
+      <p>⚠️ <strong>如果不理會？</strong></p>
+      <p>
+        ➡️ 可能進展為肝炎、肝纖維化，甚至肝硬化！
+      </p>
+      <p>✅ <strong>保肝三原則</strong></p>
+      <ol>
+        <li>飲食清淡、多蔬果</li>
+        <li>適度運動</li>
+        <li>定期做肝臟超音波檢查</li>
+      </ol>
+      <p>⬆️診所快報：<br>率先引進富士【FUJIFILM ELUXEO 8000 SYSTEM 高階內視鏡系統】，領先精準檢查。</p>
+      <br>
+      <p>🏥 <strong>曜弘診所｜您的健康守門員</strong></p>
+      <p>結合舒眠胃鏡與AI影像分析，為您的消化道健康做最精準守護。</p>
+      <p>引進【百萬級富士 ARIETTA 850 】高階超音波儀，</p>
+      <p>讓診斷更精準、檢查更安心❤️</p>
+      <p>讓醫師更早發現細微變化，守護你的肝‼️‼️</p>
+      <p>🎥 超音波臨床影片：<a href="https://youtu.be/CLOC3sbNNvU" target="_blank">https://youtu.be/CLOC3sbNNvU</a></p>
+      <p>🎥 胃腸內視鏡介紹：<a href="https://youtu.be/fFAeoz9oOc0" target="_blank">https://youtu.be/fFAeoz9oOc0</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="肝癌, 早期發現早期治療, 肝臟超音波, 三重, 新莊, 蘆洲, 板橋, 胃鏡推薦, 舒眠胃鏡, 大腸鏡推薦, 健康檢查, 癌症預防, 曜弘診所, 脂肪肝"
+/>
+<meta
+  name="description"
+  content="肝臟不會喊痛，但會默默變胖！台灣每三人就要一人有脂肪肝。若不理會可能惡化為肝炎、肝硬化。曜弘診所提供高階超音波檢查，助您早日發現肝臟危機。"
+/>
+<title>脂肪肝 —【無聲的肝臟警報】外表看不出來的健康危機‼️</title>
+
+{% endblock %}

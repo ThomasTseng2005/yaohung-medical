@@ -1,0 +1,84 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>膽結石 —【小石頭，大危機】</h2>
+  </div>
+</section>
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-21-gallstones.jpg') }}"
+        alt="膽結石"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        💎 右上腹悶痛、脹氣、吃油就痛⁉️可能是膽結石‼️<br>
+        膽結石就像隱藏在體內的小石頭，有時沉默不語，有時卻會痛到冒冷汗🤦
+      </p>
+      <p>⚠️ <strong>典型症狀</strong></p>
+      <ul>
+        <li>右上腹或背部疼痛</li>
+        <li>飯後脹氣、噁心、嘔吐</li>
+        <li>有時痛到半夜睡不著</li>
+      </ul>
+      <p>📍 <strong>為什麼會長結石？</strong></p>
+      <p>
+        飲食油膩、膽汁代謝異常、長期久坐、肥胖、糖尿病…<br>
+        都是高危險族群！
+      </p>
+      <p>🧠 <strong>檢查方式：腹部超音波</strong></p>
+      <p>
+        快速、安全、無痛，<br>
+        可同時檢查肝、膽、胰、脾等器官。<br>
+        早發現、早處理，讓「小石頭」不變成「大問題」👍
+      </p>
+      <p>⬆️診所快報：<br>率先引進富士【FUJIFILM ELUXEO 8000 SYSTEM 高階內視鏡系統】，領先精準檢查。</p>
+      <br>
+      <p>🏥 <strong>曜弘診所｜您的健康守門員</strong></p>
+      <p>結合舒眠胃鏡與AI影像分析，為您的消化道健康做最精準守護。</p>
+      <p>引進【百萬級富士 ARIETTA 850 】高階超音波儀，</p>
+      <p>讓診斷更精準、檢查更安心❤️</p>
+      <p>🎥 超音波臨床影片：<a href="https://youtu.be/CLOC3sbNNvU" target="_blank">https://youtu.be/CLOC3sbNNvU</a></p>
+      <p>🎥 胃腸內視鏡介紹：<a href="https://youtu.be/fFAeoz9oOc0" target="_blank">https://youtu.be/fFAeoz9oOc0</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="膽結石, 腹部超音波, 早期發現早期治療, 三重, 新莊, 蘆洲, 板橋, 胃鏡推薦, 舒眠胃鏡, 大腸鏡推薦, 健康檢查, 癌症預防, 曜弘診所"
+/>
+<meta
+  name="description"
+  content="右上腹悶痛、脹氣、吃油就痛？可能是膽結石！曜弘診所提供高階腹部超音波檢查，快速、無痛發現膽結石，預防大危機。"
+/>
+<title>膽結石 —【小石頭，大危機】</title>
+
+{% endblock %}
