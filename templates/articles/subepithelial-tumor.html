@@ -1,0 +1,123 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>什麼是「黏膜下腫瘤」⁉️</h2>
+  </div>
+</section>
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-23-subepithelial-tumor.jpg') }}"
+        alt="黏膜下腫瘤"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        在消化道內視鏡檢查中，偶爾會發現胃、食道、腸道表面看似正常，但隆起或突出的病灶，這些可能就是「<strong>黏膜下腫瘤</strong>（Subepithelial Tumor, SET）」。<br>
+        與一般黏膜表面病變不同，黏膜下腫瘤來自更深層的組織，可能源自黏膜下層、肌肉層甚至外部壓迫。多數為良性，但也可能為惡性的間質瘤（GIST）等，需進一步評估性質與風險。
+      </p>
+      <p>🔍 <strong>初步發現後，下一步怎麼做⁉️</strong></p>
+      <p>
+        傳統內視鏡僅能看見表面，對於黏膜下腫瘤的深度、來源層次與惡性風險無法準確判斷，這時就需要進一步的「內視鏡超音波（EUS）」協助。
+      </p>
+      <p>🌟 <strong>曜弘特色：同次完成，無須轉診重做內視鏡</strong></p>
+      <p>
+        曜弘診所導入高頻內視鏡超音波探頭（Miniprobe EUS），能夠在內視鏡檢查下同時完成局部的高解析度超音波掃描，具備以下優勢：
+      </p>
+      <ul>
+        <li>分辨腫瘤來源層次（例如是否來自肌肉層或黏膜下層）</li>
+        <li>判斷腫瘤內部結構（是否實心、液性或混合型）</li>
+        <li>協助鑑別診斷良性或惡性傾向</li>
+        <li>評估是否需要進一步切除或追蹤</li>
+      </ul>
+      <p>
+        這樣的檢查過程安全、時間短、無需全身麻醉，可以在一般內視鏡檢查後即時完成。
+      </p>
+
+      <p>🧠 <strong>常見的黏膜下腫瘤有哪些？</strong></p>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">腫瘤類型</th>
+              <th scope="col">常見位置</th>
+              <th scope="col">特徵與處理建議</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>胃腸道間質瘤（GIST）</td>
+              <td>胃體、胃底</td>
+              <td>可能惡性，需進一步評估或切除</td>
+            </tr>
+            <tr>
+              <td>平滑肌瘤</td>
+              <td>食道</td>
+              <td>通常良性，可定期追蹤</td>
+            </tr>
+            <tr>
+              <td>脂肪瘤</td>
+              <td>胃部</td>
+              <td>良性，外觀柔軟、低回音</td>
+            </tr>
+            <tr>
+              <td>迷走神經鞘瘤</td>
+              <td>胃竇、十二指腸</td>
+              <td>大多良性，必要時切除</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>📌 <strong>曜弘診所的承諾與專業提醒</strong></p>
+      <p>
+        🔬 我們以專業與高階影像設備為基礎，有效的診斷不只是找出問題，更要減少病人的不便與負擔。<br>
+        透過同步內視鏡＋超音波掃描技術，能在一次檢查中取得更完整的資訊，省去額外檢查時間與重複檢查的不適，讓您安心又安心。
+      </p>
+      <p>
+        若曾在健檢、胃鏡中被告知有「胃壁隆起」、「疑似黏膜下腫瘤」等結果，建議安排進一步內視鏡超音波檢查，讓專科醫師為您評估是否需要追蹤、切片或切除。
+      </p>
+      <br>
+      <p>🏥 <strong>曜弘診所｜您的健康守門員</strong></p>
+      <p>📍曜弘診所｜專注胃腸肝膽、值得信賴的社區內視鏡中心<br>線上掛號：<a href="https://pse.is/7ndkze" target="_blank">https://pse.is/7ndkze</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="黏膜下腫瘤, 內視鏡超音波, 肝臟超音波, 腹部超音波, 高血壓, 脂肪肝, 胃鏡推薦, 舒眠胃鏡, 大腸鏡推薦, 三重, 新莊, 蘆洲, 板橋, 曜弘診所, 腸胃保健, 健康知識科普"
+/>
+<meta
+  name="description"
+  content="消化道內視鏡發現「隆起」？可能是黏膜下腫瘤。曜弘診所引進高頻內視鏡超音波探頭(EUS)，免轉診、免重做，一次檢查即可分辨腫瘤層次與良惡性風險。"
+/>
+<title>什麼是「黏膜下腫瘤」⁉️</title>
+
+{% endblock %}

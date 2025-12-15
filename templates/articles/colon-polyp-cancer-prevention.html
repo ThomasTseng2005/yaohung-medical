@@ -1,0 +1,87 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>大腸息肉 —🥊癌症的前哨站🥊</h2>
+  </div>
+</section>
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-20-colon-polyp.jpg') }}"
+        alt="大腸息肉"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        🚨 你知道嗎❓大腸癌多從息肉開始！‼️
+      </p>
+      <p>
+        大腸息肉就像路邊的小雜草，<br>
+        不拔除，它可能有一天就長成大樹（癌）。
+      </p>
+      <p>👨‍⚕️ <strong>高風險族群</strong></p>
+      <ul>
+        <li>45歲以上</li>
+        <li>家族有大腸癌病史</li>
+        <li>飲食油膩、少蔬果</li>
+        <li>久坐、便祕</li>
+      </ul>
+      <p>💡 <strong>大腸鏡檢查的重要性</strong></p>
+      <p>
+        透過大腸鏡，醫師可在檢查當下直接切除息肉，<br>
+        降低未來癌變風險。
+      </p>
+      <p>
+        ✅ 早發現、早處理，就是最好的保險。<br>
+        曜弘診所使用高階內視鏡系統，影像清晰、無死角，<br>
+        讓檢查更安全、更安心。
+      </p>
+      <p>⬆️診所快報：<br>率先引進富士【FUJIFILM ELUXEO 8000 SYSTEM 高階內視鏡系統】，領先精準檢查。</p>
+      <br>
+      <p>🏥 <strong>曜弘診所｜您的健康守門員</strong></p>
+      <p>結合舒眠胃鏡與AI影像分析，為您的消化道健康做最精準守護。</p>
+      <p>引進【百萬級富士 ARIETTA 850 】高階超音波儀，</p>
+      <p>讓診斷更精準、檢查更安心❤️</p>
+      <p>🎥 超音波臨床影片：<a href="https://youtu.be/CLOC3sbNNvU" target="_blank">https://youtu.be/CLOC3sbNNvU</a></p>
+      <p>🎥 胃腸內視鏡介紹：<a href="https://youtu.be/fFAeoz9oOc0" target="_blank">https://youtu.be/fFAeoz9oOc0</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="大腸鏡, 息肉切除, 癌症預防, 早期發現早期治療, 三重, 新莊, 蘆洲, 板橋, 胃鏡推薦, 舒眠胃鏡, 大腸鏡推薦, 健康檢查, 曜弘診所"
+/>
+<meta
+  name="description"
+  content="大腸息肉是大腸癌的前哨站！45歲以上、有家族病史者應定期檢查。曜弘診所引進高階內視鏡，助您早期發現、早期切除息肉，預防癌變。"
+/>
+<title>大腸息肉 —🥊癌症的前哨站🥊</title>
+
+{% endblock %}

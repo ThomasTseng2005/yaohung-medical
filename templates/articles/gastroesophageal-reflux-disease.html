@@ -1,0 +1,89 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>胃食道逆流 —「火燒心」不是小事‼️</h2>
+  </div>
+</section>
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-19-gastroesophageal-reflux-disease.jpg') }}"
+        alt="胃食道逆流"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        🔥 吃飽就胸口灼熱？小心是胃食道逆流！‼️🔥<br>
+        吃完飯就覺得胸口「火燒燒」？<br>
+        或是睡前一躺下，胃酸就倒流上來？<br>
+        這可能不是消化不良，而是——胃食道逆流症✅
+      </p>
+      <p>👀 <strong>常見症狀</strong></p>
+      <ul>
+        <li>胸口灼熱、胸悶</li>
+        <li>嘴巴有酸苦味</li>
+        <li>吞嚥不順、喉嚨卡卡</li>
+        <li>長期咳嗽、聲音沙啞</li>
+      </ul>
+      <p>🍽️ <strong>預防小撇步</strong></p>
+      <ul>
+        <li>少吃油炸辛辣</li>
+        <li>飯後別馬上躺</li>
+        <li>戒菸、少喝酒</li>
+        <li>保持理想體重</li>
+      </ul>
+      <p>
+        💡長期忽略<br>
+        會造成食道炎、巴瑞特氏食道，甚至癌變風險‼️<br>
+        定期來曜弘診所做胃鏡檢查，才能真正安心。
+      </p>
+      <p>⬆️診所快報：<br>率先引進富士【FUJIFILM ELUXEO 8000 SYSTEM 高階內視鏡系統】，領先精準檢查。</p>
+      <br>
+      <p>🏥 <strong>曜弘診所｜您的健康守門員</strong></p>
+      <p>結合舒眠胃鏡與AI影像分析，</p>
+      <p>為您的消化道健康做最精準守護。</p>
+      <p>引進 百萬級富士 ARIETTA 850 高階超音波儀，</p>
+      <p>讓診斷更精準、檢查更安心❤️</p>
+      <p>🎥 超音波臨床影片：<a href="https://youtu.be/CLOC3sbNNvU" target="_blank">https://youtu.be/CLOC3sbNNvU</a></p>
+      <p>🎥 胃腸內視鏡介紹：<a href="https://youtu.be/fFAeoz9oOc0" target="_blank">https://youtu.be/fFAeoz9oOc0</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="肛門指診, 前列腺癌, 早期發現早期治療, 三重, 新莊, 蘆洲, 板橋, 胃鏡推薦, 舒眠胃鏡, 大腸鏡推薦, 健康檢查, 癌症預防, 曜弘診所, 胃食道逆流, 火燒心"
+/>
+<meta
+  name="description"
+  content="吃完飯就覺得胸口「火燒燒」？小心是胃食道逆流！症狀包括胸口灼熱、嘴巴有酸苦味。長期忽略可能導致食道炎甚至癌變。"
+/>
+<title>胃食道逆流 —「火燒心」不是小事‼️</title>
+
+{% endblock %}
