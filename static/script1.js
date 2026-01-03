@@ -196,16 +196,20 @@ $(document).ready(function () {
         return;
       }
       // 檢查是否有任何一組區間符合現在時間
-      const isInNotificationPeriod = notifications.some((period) => {
+      const activePeriod = notifications.find((period) => {
         const start = new Date(period.startDate);
         const end = new Date(period.endDate);
         // console.log('start', start);
         // console.log('end', end);
         return now >= start && now <= end;
       });
-      // console.log('isInNotificationPeriod', isInNotificationPeriod);
+      // console.log('activePeriod', activePeriod);
 
-      if (isInNotificationPeriod) {
+      if (activePeriod) {
+        // Update the image source based on the active period's configuration
+        if (activePeriod.img) {
+             $('#newsModal .modal-body img').attr('src', '/static/news/' + activePeriod.img);
+        }
         $('#newsModal').modal('show');
         $('#newsModal').on('hidden.bs.modal', function () {
           $('#newsModal1').modal('show');
