@@ -1,0 +1,98 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
+
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>🔍 糞便潛血陰性，腸道真的沒問題嗎⁉</h2>
+  </div>
+</section>
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <img
+        src="{{ url_for('static', filename='articlephoto/article-24-fecal-occult-blood-negative.jpg') }}"
+        alt="糞便潛血陰性"
+      />
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>
+        64 歲女性，長期腹脹、排便不順，只能靠藥物幫助排便。<br>
+        曾做過糞便潛血檢查，結果是「陰性」，卻始終找不到不適的真正原因。
+      </p>
+      <p>來到曜弘診所後，經詳細問診與理學檢查發現：</p>
+      <ul>
+        <li>腸鳴音偏慢</li>
+        <li>右腹部鼓脹明顯</li>
+      </ul>
+      <p>即使糞便潛血正常，我們仍建議安排大腸鏡檢查，進一步確認腸道結構是否異常。</p>
+      <p>🩺 <strong>檢查當下，發現關鍵線索</strong></p>
+      <p>
+        大腸鏡檢查中，黏膜表面大致正常，僅有輕微色素沉積，<br>
+        但在「肝彎處結腸」發現一處外觀平滑的隆起病灶——<br>
+        👉 典型的黏膜下腫瘤表現。
+      </p>
+      <p>🌟 <strong>關鍵就在這裡：當次內視鏡，立即確診</strong></p>
+      <p>
+        在曜弘診所，不需轉診、不必重做一次大腸鏡。<br>
+        檢查當下同步使用 內視鏡超音波（EUS miniprobe） 進一步掃描：
+      </p>
+      <ul>
+        <li>確認為 黏膜下囊腫</li>
+        <li>大小約 1.7 公分</li>
+        <li>無惡性特徵</li>
+      </ul>
+      <p>
+        當場向民眾完整說明，後續以生活調整與追蹤為主，症狀也明顯改善。
+      </p>
+      <p>📌 <strong>這個案例提醒我們兩件事：</strong></p>
+      <ol>
+        <li>
+          <strong>糞便潛血陰性，不代表腸道完全沒問題</strong><br>
+          糞便潛血主要篩檢「出血性病灶」，對於黏膜下腫瘤或囊腫，可能完全測不到。
+        </li>
+        <li>
+          <strong>進階內視鏡檢查，重點在「一次完成」</strong><br>
+          從表面觀察到黏膜下掃描，<br>
+          當下確診，免去重複檢查與奔波轉診的負擔。
+        </li>
+      </ol>
+      <br>
+      <p>📱 LINE 諮詢：<a href="https://lin.ee/Chp7aCa" target="_blank">https://lin.ee/Chp7aCa</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="胃鏡推薦, 舒眠胃鏡, 大腸鏡推薦, 三重, 新莊, 蘆洲, 板橋, 五股, 黏膜下腫瘤, 內視鏡超音波, 肝臟超音波, 腹部超音波, 高血壓, 脂肪肝, 曜弘診所, 腸胃保健, 健康知識科普, 案例分享, 糞便潛血陰性不代表沒問題, 一次檢查更完整"
+/>
+<meta
+  name="description"
+  content="64歲女性長期腹脹不適，糞便潛血呈陰性卻未能找到原因。來曜弘診所經問診後安排大腸鏡與內視鏡超音波檢查，當下即確診為黏膜下囊腫。糞便潛血陰性不代表腸道無礙，進階內視鏡一次檢查更完整。"
+/>
+<title>🔍 糞便潛血陰性，腸道真的沒問題嗎⁉</title>
+
+{% endblock %}
