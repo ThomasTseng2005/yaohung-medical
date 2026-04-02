@@ -526,6 +526,25 @@ body {
   margin: 0;
 }
 
+.bio-info-note {
+  line-height: 1.8;
+}
+
+.bio-info-note-item {
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.bio-info-note-item::before {
+  content: "＊";
+  position: absolute;
+  left: 0;
+}
+
+.bio-info-note-item + .bio-info-note-item {
+  margin-top: 0.8rem;
+}
+
 .bio-info i {
   font-size: 2.2rem;
   color: #d9aa84;
@@ -535,6 +554,10 @@ body {
 .bio-info-show i {
   margin-right: 0;
   line-height: 1.2;
+}
+
+.bio-info-last-icon {
+  justify-self: center;
 }
 
 #bio-info-last {
