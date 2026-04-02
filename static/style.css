@@ -526,6 +526,25 @@ body {
   margin: 0;
 }
 
+.bio-info-note {
+  line-height: 1.8;
+}
+
+.bio-info-note-item {
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.bio-info-note-item::before {
+  content: "＊";
+  position: absolute;
+  left: 0;
+}
+
+.bio-info-note-item + .bio-info-note-item {
+  margin-top: 0.8rem;
+}
+
 .bio-info i {
   font-size: 2.2rem;
   color: #d9aa84;
@@ -535,6 +554,10 @@ body {
 .bio-info-show i {
   margin-right: 0;
   line-height: 1.2;
+}
+
+.bio-info-last-icon {
+  justify-self: center;
 }
 
 #bio-info-last {
@@ -555,7 +578,8 @@ body {
 /* About */
 
 .about-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
         /* rgba(255, 255, 255, 0.6),
@@ -754,7 +778,7 @@ body {
 
 .appointment-link {
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: bold;
   color: #b6c491 !important;
 }
@@ -842,7 +866,7 @@ body {
 }
 
 .appointment-subtitle {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: bold;
   color: #b6c491 !important;
 }
@@ -878,7 +902,8 @@ body {
 /* Equipment */
 
 #equipment-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
         /* rgba(255, 255, 255, 0.6),
@@ -935,7 +960,8 @@ body {
 /* Environment */
 
 #environment-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
         /* rgba(255, 255, 255, 0.6),
@@ -969,7 +995,8 @@ body {
 
 /* Article */
 #articles-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
         /* rgba(255, 255, 255, 0.6),
@@ -1061,7 +1088,8 @@ body {
 /* Contact */
 
 #contact-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
         /* rgba(255, 255, 255, 0.6),
