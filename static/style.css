@@ -555,7 +555,8 @@ body {
 /* About */
 
 .about-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
         /* rgba(255, 255, 255, 0.6),
@@ -754,7 +755,7 @@ body {
 
 .appointment-link {
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: bold;
   color: #b6c491 !important;
 }
@@ -842,7 +843,7 @@ body {
 }
 
 .appointment-subtitle {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: bold;
   color: #b6c491 !important;
 }
@@ -878,7 +879,8 @@ body {
 /* Equipment */
 
 #equipment-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
         /* rgba(255, 255, 255, 0.6),
@@ -935,7 +937,8 @@ body {
 /* Environment */
 
 #environment-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
         /* rgba(255, 255, 255, 0.6),
@@ -969,7 +972,8 @@ body {
 
 /* Article */
 #articles-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
         /* rgba(255, 255, 255, 0.6),
@@ -1061,7 +1065,8 @@ body {
 /* Contact */
 
 #contact-header {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
         /* rgba(255, 255, 255, 0.6),
