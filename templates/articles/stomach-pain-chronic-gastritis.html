@@ -1,0 +1,98 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script2.js') }}?v={{ timestamp }}"
+></script>
+<section class="about-header" id="articles-header">
+  <h1 class="about-h1">曜弘報報</h1>
+</section>
+
+<section
+  class="about-body article-detail"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="article-detail-title">
+    <h2>【胃痛不是小事】— 小心慢性胃炎正在惡化⁉️</h2>
+  </div>
+</section>
+
+<section
+  class="article-detail-body"
+  data-aos="fade-in"
+  data-aos-delay="50"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+>
+  <div class="row">
+    <div
+      class="col-12 col-lg-4 d-flex justify-content-center align-items-start"
+    >
+      <video class="article-video-custom" autoplay loop muted playsinline>
+        <source
+          src="{{ url_for('static', filename='articlephoto/article-26-stomach-pain-chronic-gastritis.mp4') }}"
+          type="video/mp4"
+        />
+        您的瀏覽器不支援 HTML5 視訊播放。
+      </video>
+    </div>
+    <div class="col-12 col-lg-8 article-detail-content">
+      <p>(指)(指)你是否常常：</p>
+      <ul>
+        <li>吃飽就胃悶痛</li>
+        <li>空腹反而更不舒服</li>
+        <li>常打嗝、胃酸逆流</li>
+      </ul>
+      <p>
+        這些可能不是一時的消化不良，而是慢性胃炎在作怪！
+      </p>
+      <p>
+        若長期忽略，可能演變為胃潰瘍、甚至提高胃癌風險。
+      </p>
+      <p>📌 常見原因：</p>
+      <ul>
+        <li>幽門桿菌感染</li>
+        <li>長期壓力、熬夜</li>
+        <li>抽菸、飲酒、止痛藥使用過量</li>
+      </ul>
+      <p>
+        🩺 胃鏡檢查能直接看清胃黏膜狀況，找出真原因的關鍵。
+      </p>
+      <p>
+        👉 早檢查、早治療，才能真正安心吃、放心睡。
+      </p>
+      <p>很多肝膽腸胃疾病，不是突然發生，而是被忽略很久。</p>
+      <p>提早檢查，不是多做，是剛剛好。</p>
+      <p>請務必就醫評估，避免延誤真正病因。</p>
+      <p>
+        線上立即掛號：<a href="https://pse.is/7ndkze" target="_blank"
+          >https://pse.is/7ndkze</a
+        >
+      </p>
+      <p>⬆️診所快報：<br>率先引進富士【FUJIFILM ELUXEO 8000 SYSTEM 高階內視鏡系統】，領先精準檢查。</p>
+      <br>
+      <p>🏥 <strong>曜弘診所｜您的健康守門員</strong></p>
+      <p>結合舒眠胃鏡與AI影像分析，為您的消化道健康做最精準守護。</p>
+      <p>引進【百萬級富士 ARIETTA 850 】高階超音波儀，</p>
+      <p>讓診斷更精準、檢查更安心❤️</p>
+      <p>🎥 超音波臨床影片：<a href="https://youtu.be/CLOC3sbNNvU" target="_blank">https://youtu.be/CLOC3sbNNvU</a></p>
+      <p>🎥 胃腸內視鏡介紹：<a href="https://youtu.be/fFAeoz9oOc0" target="_blank">https://youtu.be/fFAeoz9oOc0</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO Meta Tags -->
+<meta
+  name="keywords"
+  content="胃痛, 慢性胃炎, 胃鏡檢查, 膽結石, 腹部超音波, 早期發現早期治療, 三重, 新莊, 蘆洲, 板橋, 胃鏡推薦, 舒眠胃鏡, 大腸鏡推薦, 健康檢查, 癌症預防, 曜弘診所, 肚子痛"
+/>
+<meta
+  name="description"
+  content="吃飽胃悶痛、空腹更不舒服、常打嗝或胃酸逆流，可能不是單純消化不良，而是慢性胃炎警訊。若長期忽略，可能演變為胃潰瘍並提高胃癌風險，及早透過胃鏡檢查找出真正原因更安心。"
+/>
+<title>【胃痛不是小事】— 小心慢性胃炎正在惡化⁉️</title>
+
+{% endblock %}
