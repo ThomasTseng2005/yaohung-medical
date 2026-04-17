@@ -5,6 +5,7 @@ from datetime import datetime
 from functools import lru_cache
 
 from flask import Flask, Response, abort, render_template, request, send_from_directory
+from werkzeug.middleware.proxy_fix import ProxyFix
 from article_metadata import ARTICLE_SEO_METADATA
 
 try:
@@ -16,6 +17,7 @@ except ImportError:
 load_dotenv()
 
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 
 SITE_NAME = "曜弘診所"
 SITE_LOCALE = "zh_TW"
