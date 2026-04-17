@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ seo.language if seo else 'zh-Hant' }}">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -8,7 +8,35 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="HandheldFriendly" content="true" />
-    <title>{{ title }}{% if title != "" %} | {% endif %}曜弘診所三重</title>
+    <title>{{ seo.full_title if seo else title }}</title>
+    <meta name="description" content="{{ seo.description if seo else '' }}" />
+    {% if seo and seo.keywords %}
+    <meta name="keywords" content="{{ seo.keywords }}" />
+    {% endif %}
+    <meta name="robots" content="{{ seo.robots if seo else 'index, follow' }}" />
+    <link rel="canonical" href="{{ seo.canonical_url if seo else request.base_url }}" />
+    <meta property="og:locale" content="{{ seo.locale if seo else 'zh_TW' }}" />
+    <meta property="og:type" content="{{ seo.type if seo else 'website' }}" />
+    <meta property="og:title" content="{{ seo.full_title if seo else title }}" />
+    <meta property="og:description" content="{{ seo.description if seo else '' }}" />
+    <meta property="og:url" content="{{ seo.canonical_url if seo else request.base_url }}" />
+    <meta property="og:site_name" content="{{ seo.site_name if seo else '曜弘診所' }}" />
+    <meta property="og:image" content="{{ seo.image_url if seo else '' }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ seo.full_title if seo else title }}" />
+    <meta name="twitter:description" content="{{ seo.description if seo else '' }}" />
+    <meta name="twitter:image" content="{{ seo.image_url if seo else '' }}" />
+    {% if seo and seo.type == "article" %}
+    <meta property="article:published_time" content="{{ seo.date_modified }}" />
+    <meta property="article:modified_time" content="{{ seo.date_modified }}" />
+    {% endif %}
+    {% if structured_data %}
+    {% for item in structured_data %}
+    <script type="application/ld+json">
+      {{ item | tojson(indent=2) | safe }}
+    </script>
+    {% endfor %}
+    {% endif %}
     <link
       rel="stylesheet"
       type="text/css"
