@@ -37,6 +37,20 @@
     </script>
     {% endfor %}
     {% endif %}
+    {% if seo and seo.path == "/" %}
+    <link
+      rel="preload"
+      as="image"
+      href="{{ url_for('static', filename='header_2025-mobile.jpg') }}"
+      media="(max-width: 768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="{{ url_for('static', filename='header_2025.jpg') }}"
+      media="(min-width: 769px)"
+    />
+    {% endif %}
     <link
       rel="stylesheet"
       type="text/css"
@@ -57,12 +71,6 @@
       type="text/css"
       href="{{ url_for('static',filename='style.css') }}?v={{ timestamp }}"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -79,7 +87,7 @@
       crossorigin="anonymous"
     ></script>
     <link
-      href="//fonts.googleapis.com/css?family=Source+Sans Pro:200"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200&display=swap"
       rel="stylesheet"
       type="text/css"
     />
@@ -91,62 +99,9 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{{ url_for('static',filename='fullcalendar/core/main.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static',filename='fullcalendar/daygrid/main.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static',filename='fullcalendar/list/main.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static',filename='fullcalendar/timegrid/main.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static',filename='fullcalendar/bootstrap/main.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
       href="{{ url_for('static',filename='fontawesome/css/all.css') }}"
     />
     <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-60994.js"></script>
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename='fullcalendar/core/main.js') }}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename='fullcalendar/daygrid/main.js') }}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename='fullcalendar/list/main.js') }}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename='fullcalendar/timegrid/main.js') }}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename='fullcalendar/bootstrap/main.js') }}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename='fullcalendar/google-calendar/main.js') }}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename='fullcalendar/core/locales/zh-tw.js') }}"
-    ></script>
     <script
       type="text/javascript"
       src="{{ url_for('static', filename='bodyScrollLock.js') }}"

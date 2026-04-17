@@ -250,6 +250,12 @@ body {
   left: 25%;
 }
 
+@media only screen and (max-width: 768px) {
+  .header {
+    background-image: url('header_2025-mobile.jpg');
+  }
+}
+
 .header-h1 {
   font-size: 3rem;
   font-family: pentouch-regular, serif;
