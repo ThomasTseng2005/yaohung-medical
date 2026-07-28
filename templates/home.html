@@ -230,9 +230,13 @@
               />
             </div>
             <div
-              class="col hours d-flex justify-content-center align-items-center display-2"
+              class="col hours d-flex justify-content-center align-items-center"
             ><!-- 二 -->
-              　
+              <img
+                src="{{ url_for('static', filename='icon-star.png') }}"
+                alt="純門診"
+                class="icon-star"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -264,7 +268,7 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 六 -->
-              　
+
             </div>
           </div>
           <div class="row text-center flex-row border-bottom">
@@ -277,21 +281,17 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3一 -->
-              　
+
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3二 -->
-              <img
-                src="{{ url_for('static', filename='icon-dot.png') }}"
-                alt="門診與胃腸鏡檢查交替進行"
-                class="icon-dot"
-              />
+
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3三 -->
-              　
+
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -319,7 +319,11 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3一 -->
-              　
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -342,17 +346,17 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3四 -->
-              　
+
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3五 -->
-              　
+
             </div>
             <div
               class="col hours-off d-flex justify-content-center align-items-center"
             ><!-- 3六 -->
-              　
+
             </div>
           </div>
         </div>
@@ -428,272 +432,6 @@
   </div>
 </section>
 <section class="doctor-wrapper" id="doctors-2" style="scroll-margin-top: 20px;">
-  <div class="doctor-grid">
-    <div class="doctor-image">
-      <img
-        src="{{ url_for('static', filename='doctor-lee-2024.jpg') }}"
-        alt="Doctor Image"
-        class="doctor-image"
-      />
-    </div>
-    <div class="doctor-info">
-      <div>
-        <h2>李儀鳴 醫師</h2>
-        <p id="doctor-description">
-          　　經過禱告開啟人生「醫」階段，因家人支持堅定走醫治道路。李醫師於醫學中心接受完整專科訓練，具有跨界專業能力，包含中醫、西醫雙執照與台大生物科技碩士學位。
-          期許將醫學中心裝備訓練之專業，於社區基層醫療，以實事求是、全人診治、每一次問診都能提供完整、詳盡、正確的診斷與治療為根基，幫助民眾恢復健康，享受豐盛美好的生命。
-        </p>
-        <div class="doctor-experience">
-          <h3>專業經歷</h3>
-          <p>中國醫藥大學醫學士、西醫、中醫雙執照</p>
-          <p>國立臺灣大學農化系學士、碩士(現生化科技系)</p>
-          <p>國立臺灣大學生化科技系碩士</p>
-          <p>台北馬偕紀念醫院胃腸肝膽科主治醫師</p>
-          <p>台灣消化系內科專科醫師</p>
-          <p>台灣消化系內視鏡醫學會專科醫師</p>
-          <p>台灣內科專科醫師</p>
-          <p>中華民國醫用超音波學會會員</p>
-        </div>
-        <div class="office-hours">
-          <h3 class="title">門診時間</h3>
-          <div class="row border-bottom text-center flex-row">
-            <div
-              class="col d-flex justify-content-center align-items-center"
-            ></div>
-            <div class="col d-flex justify-content-center align-items-center">
-              一
-            </div>
-            <div class="col d-flex justify-content-center align-items-center">
-              二
-            </div>
-            <div class="col d-flex justify-content-center align-items-center">
-              三
-            </div>
-            <div class="col d-flex justify-content-center align-items-center">
-              四
-            </div>
-            <div class="col d-flex justify-content-center align-items-center">
-              五
-            </div>
-            <div class="col d-flex justify-content-center align-items-center">
-              六
-            </div>
-          </div>
-          <div class="row text-center flex-row border-bottom">
-            <div
-              class="col border-right d-flex justify-content-center align-items-center"
-            >
-              09:00 <br />~<br />
-              13:00
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 一 -->
-              <img
-                src="{{ url_for('static', filename='icon-grass.png') }}"
-                alt="內視鏡檢查診"
-                class="icon-grass"
-              />
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center display-2"
-            ><!-- 二 -->
-              <img
-                src="{{ url_for('static', filename='icon-star.png') }}"
-                alt="純門診"
-                class="icon-star"
-              />
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 三 -->
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 四 -->
-              <img
-                src="{{ url_for('static', filename='icon-dot.png') }}"
-                alt="門診與胃腸鏡檢查交替進行"
-                class="icon-dot"
-              />
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 五 -->
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 六 -->
-              　
-            </div>
-          </div>
-          <div class="row text-center flex-row border-bottom">
-            <div
-              class="col border-right d-flex justify-content-center align-items-center"
-            >
-              14:00 <br />~<br />
-              17:00
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 2一 -->
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 2二 -->
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 2三 -->
-              <img
-                src="{{ url_for('static', filename='icon-dot.png') }}"
-                alt="門診與胃腸鏡檢查交替進行"
-                class="icon-dot"
-              />
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 2四 -->
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 2五 -->
-              <img
-                src="{{ url_for('static', filename='icon-dot.png') }}"
-                alt="門診與胃腸鏡檢查交替進行"
-                class="icon-dot"
-              />
-            </div>
-            <div
-              class="col hours-off d-flex justify-content-center align-items-center"
-            ><!-- 2六off -->
-              　
-            </div>
-          </div>
-          <div class="row text-center flex-row">
-            <div
-              class="col border-right d-flex justify-content-center align-items-center"
-            >
-              17:30 <br />~<br />
-              21:00
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 3一 -->
-              <img
-                src="{{ url_for('static', filename='icon-dot.png') }}"
-                alt="門診與胃腸鏡檢查交替進行"
-                class="icon-dot"
-              />
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 3二 -->
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 3三 -->
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 3四 -->
-              　
-            </div>
-            <div
-              class="col hours d-flex justify-content-center align-items-center"
-            ><!-- 3五 -->
-              <img
-                src="{{ url_for('static', filename='icon-dot.png') }}"
-                alt="門診與胃腸鏡檢查交替進行"
-                class="icon-dot"
-              />
-            </div>
-            <div
-              class="col hours-off d-flex justify-content-center align-items-center"
-            ><!-- 3六 -->
-              　
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="row flex-row office-hours-description">
-          <div class="col-md-12 d-flex align-items-start align-items-md-center">
-            <img
-              src="{{ url_for('static', filename='icon-star.png') }}"
-              alt="純門診"
-              class="icon-star"
-            />
-            <span>
-              <span class="font-weight-bold">純門診：</span
-              >無內視鏡檢查時段，供看診者多利用，超音波、心電圖等均可進行。
-            </span>
-          </div>
-          <div class="col-md-12 d-flex align-items-start align-items-md-center">
-            <img
-              src="{{ url_for('static', filename='icon-grass.png') }}"
-              alt="純門診"
-              class="icon-grass"
-            />
-            <span
-              ><span class="font-weight-bold">內視鏡檢查診：</span
-              >進行胃腸內視鏡檢查與特約診</span
-            >
-          </div>
-          <div
-            class="col-md-12 d-flex align-items-start align-items-md-center dot"
-          >
-            <img
-              src="{{ url_for('static', filename='icon-dot.png') }}"
-              alt="門診與胃腸鏡檢查交替進行"
-              class="icon-dot"
-            />
-            <span class="font-weight-bold"
-              >門診與胃腸鏡檢查交替進行，洽詢櫃檯可有較精確候診時間推估。</span
-            >
-          </div>
-          <div
-            class="col-md-12 d-flex align-items-start align-items-md-center note"
-          >
-            以上請於開診期間來電02-29840101洽詢。
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="medical-wrapper">
-  <div class="medical-description">
-    <h2>診治專長</h2>
-    <ul class="medical-grid">
-      <li>高血壓</li>
-      <li>高血脂</li>
-      <li>糖尿病</li>
-      <li>肝膽疾病</li>
-      <li>B、C型肝炎</li>
-      <li>腸胃疾病</li>
-      <li>胃潰瘍</li>
-      <li>胃食道逆流</li>
-      <li>十二指腸潰瘍</li>
-      <li>胃幽門桿菌感染</li>
-      <li>腹脹/腹痛</li>
-      <li>腹瀉/便秘</li>
-      <li>腸胃炎</li>
-      <li>腸躁症</li>
-      <li>內科疾病</li>
-      <li>泌尿道感染</li>
-      <li>甲狀腺疾病</li>
-      <li>感冒</li>
-    </ul>
-  </div>
-</section>
-<section class="doctor-wrapper" id="doctors-3" style="scroll-margin-top: 20px;">
   <div class="doctor-grid">
     <div class="doctor-image">
       <img
@@ -817,12 +555,16 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 2二 -->
-              　
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 2三 -->
-              　
+
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -836,12 +578,12 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 2五 -->
-              　
+
             </div>
             <div
               class="col hours-off d-flex justify-content-center align-items-center"
             ><!-- 2六off -->
-              　
+
             </div>
           </div>
           <div class="row text-center flex-row">
@@ -854,17 +596,17 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3一 -->
-              　
+
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3二 -->
-              　
+
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3三 -->
-              　
+
             </div>
             <div
               class="col hours d-flex justify-content-center align-items-center"
@@ -878,12 +620,12 @@
             <div
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 3五 -->
-              　
+
             </div>
             <div
               class="col hours-off d-flex justify-content-center align-items-center"
             ><!-- 3六 -->
-              　
+
             </div>
           </div>
         </div>
@@ -959,6 +701,258 @@
     </ul>
   </div>
 </section>
+<section class="doctor-wrapper" id="doctors-3" style="scroll-margin-top: 20px;">
+  <div class="doctor-grid">
+    <div class="doctor-image">
+      <img
+        src="{{ url_for('static', filename='doctor-chen.png') }}"
+        alt="Doctor Image"
+        class="doctor-image"
+      />
+    </div>
+    <div class="doctor-info">
+      <div>
+        <h2>陳奕霖 醫師</h2>
+        <p id="doctor-description">
+          　　兼具藥學與醫學雙專業，深耕三重基層社區醫療多年。堅持 「聆聽、細問、身體評估」，結合高階醫療設備，進行專業診療，銜接高階影像檢查，掌握黃金治療期，不僅治療病痛，更願意陪伴您走過人生的高山低谷。
+        </p>
+        <div class="doctor-experience">
+          <h3>專業經歷</h3>
+          <p>三重宏仁醫院消化內科主治醫師</p>
+          <p>台北市立聯合醫院仁愛院區消化內科主治醫師</p>
+          <p>台灣消化系醫學會專科醫師</p>
+          <p>台灣內視鏡醫學會專科醫師</p>
+          <p>台灣內科醫學會專科醫師</p>
+          <p>台灣腫瘤消融醫學會會員</p>
+          <p>中華民國醫用超音波學會會員</p>
+          <p>台北醫學大學醫學士</p>
+          <p>國立台灣大學藥學士</p>
+        </div>
+        <div class="office-hours">
+          <h3 class="title">門診時間</h3>
+          <div class="row border-bottom text-center flex-row">
+            <div
+              class="col d-flex justify-content-center align-items-center"
+            ></div>
+            <div class="col d-flex justify-content-center align-items-center">
+              一
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              二
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              三
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              四
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              五
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              六
+            </div>
+          </div>
+          <div class="row text-center flex-row border-bottom">
+            <div
+              class="col border-right d-flex justify-content-center align-items-center"
+            >
+              09:00 <br />~<br />
+              13:00
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 一 -->
+              <img
+                src="{{ url_for('static', filename='icon-grass.png') }}"
+                alt="內視鏡檢查診"
+                class="icon-grass"
+              />
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 二 -->
+            　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 三 -->
+              　
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 四 -->
+              <img
+                src="{{ url_for('static', filename='icon-star.png') }}"
+                alt="純門診"
+                class="icon-star"
+              />
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 五 -->
+
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 六 -->
+
+            </div>
+          </div>
+          <div class="row text-center flex-row border-bottom">
+            <div
+              class="col border-right d-flex justify-content-center align-items-center"
+            >
+              14:00 <br />~<br />
+              17:00
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 2一 -->
+
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 2二 -->
+
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 2三 -->
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 2四 -->
+
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 2五 -->
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
+            </div>
+            <div
+              class="col hours-off d-flex justify-content-center align-items-center"
+            ><!-- 2六off -->
+
+            </div>
+          </div>
+          <div class="row text-center flex-row">
+            <div
+              class="col border-right d-flex justify-content-center align-items-center"
+            >
+              17:30 <br />~<br />
+              21:00
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 3一 -->
+
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 3二 -->
+
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 3三 -->
+
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 3四 -->
+
+            </div>
+            <div
+              class="col hours d-flex justify-content-center align-items-center"
+            ><!-- 3五 -->
+              <img
+                src="{{ url_for('static', filename='icon-dot.png') }}"
+                alt="門診與胃腸鏡檢查交替進行"
+                class="icon-dot"
+              />
+            </div>
+            <div
+              class="col hours-off d-flex justify-content-center align-items-center"
+            ><!-- 3六 -->
+
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row flex-row office-hours-description">
+          <div class="col-md-12 d-flex align-items-start align-items-md-center">
+            <img
+              src="{{ url_for('static', filename='icon-star.png') }}"
+              alt="純門診"
+              class="icon-star"
+            />
+            <span>
+              <span class="font-weight-bold">純門診：</span
+              >無內視鏡檢查時段，供看診者多利用，超音波、心電圖等均可進行。
+            </span>
+          </div>
+          <div class="col-md-12 d-flex align-items-start align-items-md-center">
+            <img
+              src="{{ url_for('static', filename='icon-grass.png') }}"
+              alt="純門診"
+              class="icon-grass"
+            />
+            <span
+              ><span class="font-weight-bold">內視鏡檢查診：</span
+              >進行胃腸內視鏡檢查與特約診</span
+            >
+          </div>
+          <div
+            class="col-md-12 d-flex align-items-start align-items-md-center dot"
+          >
+            <img
+              src="{{ url_for('static', filename='icon-dot.png') }}"
+              alt="門診與胃腸鏡檢查交替進行"
+              class="icon-dot"
+            />
+            <span class="font-weight-bold"
+              >門診與胃腸鏡檢查交替進行，洽詢櫃檯可有較精確候診時間推估。</span
+            >
+          </div>
+          <div
+            class="col-md-12 d-flex align-items-start align-items-md-center note"
+          >
+            以上請於開診期間來電02-29840101洽詢。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="medical-wrapper">
+  <div class="medical-description">
+    <h2>診治專長</h2>
+    <ul class="medical-grid">
+      <li>胃食道逆流</li>
+      <li>消化道潰瘍</li>
+      <li>胃幽門螺旋桿菌感染</li>
+      <li>急/慢性肝炎</li>
+      <li>B、C型肝炎</li>
+      <li>肝硬化</li>
+      <li>肝腫瘤</li>
+      <li>胃鏡</li>
+      <li>大腸鏡檢查與內視鏡息肉切除</li>
+      <li>急慢性腹痛</li>
+      <li>消化系統癌症之診療</li>
+      <li>腹部超音波</li>
+    </ul>
+  </div>
+</section>
 <section class="doctor-wrapper" id="opd-schedule" style="scroll-margin-top: 20px;">
   <div class="opd-schedule-grid">
     <div class="opd-schedule-info">
@@ -1017,7 +1011,7 @@
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 二 -->
-              李
+              田
             </div>
             <div
               class="col doctor d-flex justify-content-center align-items-center"
@@ -1027,7 +1021,7 @@
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 四 -->
-             李
+             陳
             </div>
             <div
               class="col doctor d-flex justify-content-center align-items-center"
@@ -1060,7 +1054,7 @@
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 2一 -->
-              李
+              陳
             </div>
             <div
               class="col doctor d-flex justify-content-center align-items-center"
@@ -1085,7 +1079,7 @@
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 2六 -->
-              林
+
             </div>
           </div>
           <div class="row text-center flex-row border-bottom">
@@ -1113,12 +1107,12 @@
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 3二 -->
-              田
+              林
             </div>
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 3三 -->
-              李
+              陳
             </div>
             <div
               class="col doctor d-flex justify-content-center align-items-center"
@@ -1128,7 +1122,7 @@
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 3五 -->
-              李
+              陳
             </div>
             <div
               class="col doctor-off d-flex justify-content-center align-items-center"
@@ -1156,7 +1150,7 @@
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 4一 -->
-              李
+              田
             </div>
             <div
               class="col doctor d-flex justify-content-center align-items-center"
@@ -1176,7 +1170,7 @@
             <div
               class="col doctor d-flex justify-content-center align-items-center"
             ><!-- 4五 -->
-              李
+              陳
             </div>
             <div
               class="col doctor-off d-flex justify-content-center align-items-center"
