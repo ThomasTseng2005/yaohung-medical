@@ -783,9 +783,9 @@
               class="col hours d-flex justify-content-center align-items-center"
             ><!-- 四 -->
               <img
-                src="{{ url_for('static', filename='icon-dot.png') }}"
-                alt="門診與胃腸鏡檢查交替進行"
-                class="icon-dot"
+                src="{{ url_for('static', filename='icon-star.png') }}"
+                alt="純門診"
+                class="icon-star"
               />
             </div>
             <div
@@ -890,6 +890,17 @@
         </div>
         <br />
         <div class="row flex-row office-hours-description">
+          <div class="col-md-12 d-flex align-items-start align-items-md-center">
+            <img
+              src="{{ url_for('static', filename='icon-star.png') }}"
+              alt="純門診"
+              class="icon-star"
+            />
+            <span>
+              <span class="font-weight-bold">純門診：</span
+              >無內視鏡檢查時段，供看診者多利用，超音波、心電圖等均可進行。
+            </span>
+          </div>
           <div class="col-md-12 d-flex align-items-start align-items-md-center">
             <img
               src="{{ url_for('static', filename='icon-grass.png') }}"
